@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JCuEE13725nRlzj5I0I9gmQKlqpxupPxlVYa1IaH/Ro02vK+iH+JooGEO+2G9sHUT9FaV/4s7xJS1ZnBBRJ71w==",
+  "success": true,
+  "projectFilePath": "/home/valentin/RiderProjects/MuseWave/MuseWave.API/MuseWave.API.csproj",
+  "expectedPackageFiles": [
+    "/home/valentin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

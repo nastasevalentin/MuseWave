@@ -1,0 +1,16 @@
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/bin/Debug/net8.0/MuseWave.Application.deps.json
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/bin/Debug/net8.0/MuseWave.Application.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/bin/Debug/net8.0/MuseWave.Application.pdb
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/bin/Debug/net8.0/MuseWave.Domain.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/bin/Debug/net8.0/MuseWave.Domain.pdb
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.csproj.AssemblyReference.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.AssemblyInfoInputs.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.AssemblyInfo.cs
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.csproj.CoreCompileInputs.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.sourcelink.json
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.csproj.CopyComplete
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/refint/MuseWave.Application.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/MuseWave.Application.pdb
+/home/valentin/RiderProjects/MuseWave/MuseWave.Application/obj/Debug/net8.0/ref/MuseWave.Application.dll
