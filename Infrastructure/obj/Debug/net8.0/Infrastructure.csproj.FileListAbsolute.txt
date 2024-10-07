@@ -1,0 +1,14 @@
+/home/valentin/RiderProjects/MuseWave/Infrastructure/bin/Debug/net8.0/Infrastructure
+/home/valentin/RiderProjects/MuseWave/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/home/valentin/RiderProjects/MuseWave/Infrastructure/bin/Debug/net8.0/Infrastructure.runtimeconfig.json
+/home/valentin/RiderProjects/MuseWave/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/home/valentin/RiderProjects/MuseWave/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
+/home/valentin/RiderProjects/MuseWave/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll

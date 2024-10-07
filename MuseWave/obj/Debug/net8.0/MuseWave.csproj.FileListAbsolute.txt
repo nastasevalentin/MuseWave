@@ -1,0 +1,14 @@
+/home/valentin/RiderProjects/MuseWave/MuseWave/bin/Debug/net8.0/MuseWave
+/home/valentin/RiderProjects/MuseWave/MuseWave/bin/Debug/net8.0/MuseWave.deps.json
+/home/valentin/RiderProjects/MuseWave/MuseWave/bin/Debug/net8.0/MuseWave.runtimeconfig.json
+/home/valentin/RiderProjects/MuseWave/MuseWave/bin/Debug/net8.0/MuseWave.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave/bin/Debug/net8.0/MuseWave.pdb
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.GeneratedMSBuildEditorConfig.editorconfig
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.AssemblyInfoInputs.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.AssemblyInfo.cs
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.csproj.CoreCompileInputs.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/refint/MuseWave.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.pdb
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/MuseWave.genruntimeconfig.cache
+/home/valentin/RiderProjects/MuseWave/MuseWave/obj/Debug/net8.0/ref/MuseWave.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FyX1oO9AFdEWbXTDu1dzCGfliHaY51T3kVWBghowoX+VY1igTfNWtlnBphdig38ftRwaB3TkQq5xUo/AVUsxag==",
+  "success": true,
+  "projectFilePath": "/home/valentin/RiderProjects/MuseWave/Infrastructure/Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/valentin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
