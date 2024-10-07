@@ -8,6 +8,16 @@ public class User
     public string Password { get; set; }
     public Role Role { get; set; }
     public DateTime DateJoined { get; set; }
+    
+    private User(string username, string email, string password, Role role, DateTime dateJoined)
+    {
+        UserId = new Guid();
+        Username = username;
+        Email = email;
+        Password = password;
+        Role = role;
+        DateJoined = dateJoined;
+    } 
 }
 
 public enum Role
