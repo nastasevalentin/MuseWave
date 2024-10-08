@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/zkWQ5rbjqIotz7LshdH4VdHWc896tpmpwZJnDDsd3+XSGgFpohWTpT7qBUsedZRej/G9GvJAUJcAPPVtvfgtA==",
+  "dgSpecHash": "2I1L+pyT1Q7Zwe1djfYAEzE+oTsMwNXt6TlxtCT5pmspS52X8hy9QRgGudaTsk2JFPLOQ8fW3n5gufWwZSbd4w==",
   "success": true,
   "projectFilePath": "/home/valentin/RiderProjects/MuseWave/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/valentin/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/valentin/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

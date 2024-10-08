@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BohtevVzmvLz2vVigbekQx4mSMfJuALe/BGH5B4toFz6P+NE13tQg2tp/TzaNEy5P01caS0zEe6f/NSrmE5tDw==",
+  "dgSpecHash": "5z3E0XONSOVGNli6fEuby77O8YnJ3Vpemer7MR52MhhqikE7enkqxMt216B4AUSgYC/SVlLKjnAcFTJQXkTm/Q==",
   "success": true,
   "projectFilePath": "/home/valentin/RiderProjects/MuseWave/MuseWave.Application/MuseWave.Application.csproj",
   "expectedPackageFiles": [
+    "/home/valentin/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/valentin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
   ],
   "logs": []

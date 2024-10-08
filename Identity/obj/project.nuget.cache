@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "yvvtslu2xqcr5FQ0qkCnqn9Eks/pWKz8fDkMSv2CIU4N8PRbtky32so5oZSumJC9vwtokQl2a/jtfFXYSX3e3w==",
+  "dgSpecHash": "rPg6OquOPaimdXpSkcXMOFzheccF9dOKZkkP4fzC9BFBasE5VitkRdTof0tN8n4akzwtMapr+/Ki1ODZrjEPag==",
   "success": true,
   "projectFilePath": "/home/valentin/RiderProjects/MuseWave/Identity/Identity.csproj",
   "expectedPackageFiles": [
     "/home/valentin/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/valentin/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/valentin/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",

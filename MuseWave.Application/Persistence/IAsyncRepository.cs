@@ -1,11 +1,14 @@
 using MuseWave.Domain.Common;
-namespace MuseWave.Application.Persistence;
 
-public interface IAsyncRepository<T> where T: class
+namespace MuseWave.Application.Persistence
 {
-    Task<Result<T>> AddAsync(T entity);
-    Task<Result<T>> UpdateAsync(T entity);
-    Task<Result<T>> DeleteAsync(Guid id);
-    Task<Result<T>> GetByIdAsync(Guid id);
-    Task<Result<IReadOnlyList<T>>> GetAll();
+
+    public interface IAsyncRepository<T> where T : class
+    {
+        Task<Result<T>> AddAsync(T entity);
+        Task<Result<T>> UpdateAsync(T entity);
+        Task<Result<T>> DeleteAsync(Guid id);
+        Task<Result<T>> FindByIdAsync(Guid id);
+        Task<Result<IReadOnlyList<T>>> GetPagedReponseAsync(int page, int size);
+    }
 }

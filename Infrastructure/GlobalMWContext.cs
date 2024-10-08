@@ -16,11 +16,11 @@ public class GlobalMWContext : DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=master;User Id=sa;Password=!Tentacion123;");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=master;User Id=sa;Password=!Tentacion123;TrustServerCertificate=true;");
     }
 
     
-    // public GlobalMWContext(DbContextOptions<GlobalMWContext> options) : base(options)
-    // {
-    // }
+    public GlobalMWContext(DbContextOptions<GlobalMWContext> options) : base(options)
+    {
+    }
 }

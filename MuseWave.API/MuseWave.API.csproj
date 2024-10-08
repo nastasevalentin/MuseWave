@@ -8,10 +8,25 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
       <Folder Include="Models\" />
       <Folder Include="Services\" />
       <Folder Include="Utility\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.4.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Identity.Web" Version="3.2.1" />
+      <PackageReference Include="Microsoft.OpenApi" Version="1.6.22" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Identity\Identity.csproj" />
+      <ProjectReference Include="..\MuseWave.Application\MuseWave.Application.csproj" />
+      <ProjectReference Include="..\MuseWave.Domain\MuseWave.Domain.csproj" />
     </ItemGroup>
 
 </Project>
