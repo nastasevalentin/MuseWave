@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuseWave.Application.Features.Songs.Commands.CreateSong;
+using MuseWave.Application.Features.Songs.Commands.DeleteSong;
 using MuseWave.Application.Features.Songs.Commands.UpdateSong;
 using MuseWave.Application.Features.Songs.Queries;
 using MuseWave.Application.Features.Songs.Queries.GetAllSongs;
@@ -48,6 +49,14 @@ namespace MuseWave.API.Controllers
         public async Task<IActionResult> GetAll(Guid id)
         {
             var result = await Mediator.Send(new GetAllSongsByAlbumIdQuery(id));
+            return Ok(result);
+        }
+        
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var result = await Mediator.Send(new DeleteSongCommand(id));
             return Ok(result);
         }
     }

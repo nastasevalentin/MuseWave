@@ -20,7 +20,6 @@
       <Folder Include="Features\Albums\Commands\UpdateAlbum\" />
       <Folder Include="Features\Albums\Queries\GetAll\" />
       <Folder Include="Features\Albums\Queries\GetById\" />
-      <Folder Include="Features\Songs\Commands\DeleteSong\" />
     </ItemGroup>
 
 </Project>
