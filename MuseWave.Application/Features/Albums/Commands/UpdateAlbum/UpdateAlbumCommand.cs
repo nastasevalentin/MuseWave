@@ -1,6 +1,8 @@
-namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
+using MediatR;
+
+namespace MuseWave.Application.Features.Albums.Commands.UpdateAlbum
 {
-    public class CreateAlbumDto
+    public class UpdateAlbumCommand : IRequest<UpdateAlbumCommandResponse>
     {
         public Guid Id { get; set; }
         public string Title { get; set; } = default!;

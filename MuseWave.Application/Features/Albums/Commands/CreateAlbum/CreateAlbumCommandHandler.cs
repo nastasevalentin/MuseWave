@@ -42,7 +42,7 @@ namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
             return new CreateAlbumCommandResponse
             {
                 Success = true,
-                Album = new CreateAlbumDto
+                Album = new AlbumDto
                 {
                     Id = album.Value.Id,
                     Title = album.Value.Title,

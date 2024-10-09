@@ -8,6 +8,6 @@ namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
         {
         }
 
-        public CreateAlbumDto Album { get; set; }
+        public AlbumDto Album { get; set; }
     }
 }

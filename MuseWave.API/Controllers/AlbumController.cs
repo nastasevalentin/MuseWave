@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuseWave.Application.Features.Albums.Commands.CreateAlbum;
+using MuseWave.Application.Features.Albums.Commands.DeleteAlbum;
+using MuseWave.Application.Features.Albums.Commands.UpdateAlbum;
+using MuseWave.Application.Features.Albums.Queries.GetAlbumById;
 
 namespace MuseWave.API.Controllers
 {
@@ -15,6 +18,35 @@ namespace MuseWave.API.Controllers
             {
                 return BadRequest(result);
             }
+            return Ok(result);
+        }
+        
+        [HttpGet("{id:Guid}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var result = await Mediator.Send(new GetAlbumByIdQuery(id));
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+        
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var result = await Mediator.Send(new DeleteAlbumCommand(id));
+            return Ok(result);
+        }
+        
+        [HttpPut("{id:Guid}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> Update(Guid id, UpdateAlbumCommand command)
+        {
+            command.Id = id;
+            var result = await Mediator.Send(command);
             return Ok(result);
         }
     }
