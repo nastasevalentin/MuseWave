@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using MuseWave.Application.Persistence;
 using MuseWave.Domain.Common;
 
-namespace Infrastructure.Repositories
-{
+namespace Infrastructure.Repositories;
 
-    public class BaseRepository<T> : IAsyncRepository<T> where T : class
+
+public class BaseRepository<T>: IAsyncRepository<T> where T: class
     {
         protected readonly GlobalMWContext context;
 
@@ -13,39 +13,12 @@ namespace Infrastructure.Repositories
         {
             this.context = context;
         }
+    
         public virtual async Task<Result<T>> AddAsync(T entity)
         {
             await context.Set<T>().AddAsync(entity);
             await context.SaveChangesAsync();
             return Result<T>.Success(entity);
-        }
-
-        public virtual async Task<Result<T>> DeleteAsync(Guid id)
-        {
-            var result = await FindByIdAsync(id);
-            if (result != null)
-            {
-                context.Set<T>().Remove(result.Value);
-                await context.SaveChangesAsync();
-                return Result<T>.Success(result.Value);
-            }
-            return Result<T>.Failure($"Entity with id {id} not found");
-        }
-
-        public virtual async Task<Result<T>> FindByIdAsync(Guid id)
-        {
-            var result = await context.Set<T>().FindAsync(id);
-            if (result == null)
-            {
-                return Result<T>.Failure($"Entity with id {id} not found");
-            }
-            return Result<T>.Success(result);
-        }
-
-        public virtual async Task<Result<IReadOnlyList<T>>> GetPagedReponseAsync(int page, int size)
-        {
-            var result = await context.Set<T>().Skip(page).Take(size).AsNoTracking().ToListAsync();
-            return Result<IReadOnlyList<T>>.Success(result);
         }
 
         public virtual async Task<Result<T>> UpdateAsync(T entity)
@@ -54,5 +27,34 @@ namespace Infrastructure.Repositories
             await context.SaveChangesAsync();
             return Result<T>.Success(entity);
         }
+
+        public virtual async Task<Result<T>> DeleteAsync(Guid id)
+        {
+            var result = await GetByIdAsync(id);
+            if (!result.IsSuccess)
+            {
+                return Result<T>.Failure($"Entity with id {id} not found");
+            }
+        
+            context.Set<T>().Remove(result.Value);
+            await context.SaveChangesAsync();
+            return Result<T>.Success(result.Value);
+        }
+
+        public virtual async Task<Result<T>> GetByIdAsync(Guid id)
+        {
+            var result = await context.Set<T>().FindAsync(id);
+            if (result == null)
+            {
+                return Result<T>.Failure($"Entity with id {id} not found");
+            }
+        
+            return Result<T>.Success(result);
+        }
+
+        public virtual async Task<Result<IReadOnlyList<T>>> GetAll()
+        {
+            var result = await context.Set<T>().AsNoTracking().ToListAsync();
+            return Result<IReadOnlyList<T>>.Success(result);
+        }
     }
-}

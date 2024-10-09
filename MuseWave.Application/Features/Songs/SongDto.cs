@@ -1,6 +1,6 @@
-namespace MuseWave.Application.Features.Songs.Commands.CreateSong
+namespace MuseWave.Application.Features.Songs
 {
-    public class CreateSongDto
+    public class SongDto
     {
         public Guid Id { get; set; }
         public string Title { get; set; } = default!;

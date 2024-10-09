@@ -8,6 +8,6 @@ namespace MuseWave.Application.Features.Songs.Commands.CreateSong
         {
         }
 
-        public CreateSongDto Song { get; set; }
+        public SongDto Song { get; set; }
     }
 }

@@ -41,7 +41,7 @@ namespace MuseWave.Application.Features.Songs.Commands.CreateSong
             return new CreateSongCommandResponse
             {
                 Success = true,
-                Song = new CreateSongDto
+                Song = new SongDto
                 {
                     Id = song.Value.Id,
                     Title = song.Value.Title,
