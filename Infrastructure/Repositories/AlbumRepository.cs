@@ -12,5 +12,11 @@ namespace Infrastructure.Repositories
         public AlbumRepository(GlobalMWContext context) : base(context)
         {
         }
+        
+        public virtual async Task<Result<IReadOnlyList<Album>>> GetAllAlbumsByArtistId(Guid artistId)
+        {
+            var albums = await context.Albums.Where(a => a.ArtistId == artistId).ToListAsync();
+            return Result<IReadOnlyList<Album>>.Success(albums);
+        }
     }
 }

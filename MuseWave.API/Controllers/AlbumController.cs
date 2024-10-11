@@ -4,6 +4,7 @@ using MuseWave.Application.Features.Albums.Commands.CreateAlbum;
 using MuseWave.Application.Features.Albums.Commands.DeleteAlbum;
 using MuseWave.Application.Features.Albums.Commands.UpdateAlbum;
 using MuseWave.Application.Features.Albums.Queries.GetAlbumById;
+using MuseWave.Application.Features.Albums.Queries.GetAllAlbumsByArtistId;
 
 namespace MuseWave.API.Controllers
 {
@@ -47,6 +48,15 @@ namespace MuseWave.API.Controllers
         {
             command.Id = id;
             var result = await Mediator.Send(command);
+            return Ok(result);
+        }
+        
+        
+        [HttpGet("Artist/{id:Guid}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetAll(Guid id)
+        {
+            var result = await Mediator.Send(new GetAllAlbumsByArtistIdQuery(id));
             return Ok(result);
         }
     }
