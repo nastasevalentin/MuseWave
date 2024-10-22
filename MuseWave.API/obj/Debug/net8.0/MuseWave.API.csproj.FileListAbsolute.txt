@@ -101,3 +101,6 @@
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/MuseWave.Domain.pdb
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/Infrastructure.pdb
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/FluentValidation.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.json
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.Development.json
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.Production.json

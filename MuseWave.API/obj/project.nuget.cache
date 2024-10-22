@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T0b25fc/BowUL8UHjSHKekq7Mxj3M0h5crtn1MybpYChIkRnZ4bQZXsOU5r/ASyAdUfL3rYpDo8kTV0dKxDR4Q==",
+  "dgSpecHash": "uMxrnZOZP0bPwqvksUUZAXyX6XvZxPpLXG3Ulq7NxF+gK0AYKbvKi3+DxGfnkzWXm/6ZvDuwbUHxZLduAce7ag==",
   "success": true,
   "projectFilePath": "/home/valentin/RiderProjects/MuseWave/MuseWave.API/MuseWave.API.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,7 @@
     "/home/valentin/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "/home/valentin/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
     "/home/valentin/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

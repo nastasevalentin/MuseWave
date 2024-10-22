@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("9d49524c-940e-4ee1-9774-341022f817f6")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14c20b982d93b955f03c48825840794fe1ea0941")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffb3993ea96c9a4528fa7e27d64f3d116d3e380f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
