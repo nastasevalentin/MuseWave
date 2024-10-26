@@ -1,5 +1,6 @@
 ﻿using Infrastructure;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +11,10 @@ using MuseWave.Application.Contracts.Interfaces;
 using MuseWave.Application.Models;
 using MuseWave.Identity;
 using Microsoft.OpenApi.Models;
+using MuseWave.Identity.Models;
+using MuseWave.Identity.Services;
+
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +37,7 @@ builder.Services.AddInfrastrutureToDI(
 builder.Services.AddInfrastrutureIdentityToDI(builder.Configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddControllers();
+builder.Services.AddScoped<RoleService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -76,17 +82,37 @@ builder.Services.AddSwaggerGen(c =>
     c.OperationFilter<FileResultContentTypeOperationFilter>();
 });
 
-var jwtSecret = builder.Configuration["JWT:Secret"];
-if (string.IsNullOrEmpty(jwtSecret))
-{
-    throw new ArgumentNullException(nameof(jwtSecret), "JWT:Secret configuration value is missing.");
-}
-Console.WriteLine($"JWT:Secret: {jwtSecret}");
 
-var connectionString = builder.Configuration.GetConnectionString("MuseWaveConnection");
-Console.WriteLine($"Connection String: {connectionString}");
 var app = builder.Build();
-
+// using (var scope = app.Services.CreateScope())
+// {
+//     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+//     if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
+//     {
+//         await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
+//     }
+//
+//     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+//     var roleService = scope.ServiceProvider.GetRequiredService<RoleService>();
+//
+//     var user = await userManager.FindByNameAsync("valibi80");
+//     if (user != null)
+//     {
+//         var result = await roleService.AssignRoleToUserAsync(user, UserRoles.Admin);
+//         if (result)
+//         {
+//             Console.WriteLine("User 'valibi80' has been assigned the 'Admin' role.");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Failed to assign the 'Admin' role to user 'valibi80'.");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("User 'valibi80' not found.");
+//     }
+// }
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

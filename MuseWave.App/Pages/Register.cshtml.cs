@@ -42,6 +42,7 @@ namespace MuseWave.App.Pages
             var result = await _userManager.CreateAsync(user, RegisterC.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(user, UserRoles.User);
                 SuccessMessage = "Your account has been created successfully!";
                 return Page();
             }
