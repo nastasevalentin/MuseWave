@@ -50,13 +50,14 @@ namespace MuseWave.Identity
                             {
                                 Console.WriteLine(configRoot.GetDebugView());
                             }
-                            var jwtSecret = configuration["SecretKey"];
+                            var jwtSecret = configuration["JWT:Secret"];
                             if (string.IsNullOrEmpty(jwtSecret))
                             {
                                 throw new ArgumentNullException(nameof(jwtSecret), "JWT:Secret configuration value is missing.");
                             }
-                            Console.WriteLine($"JWT:Secret: {jwtSecret}");
-
+                            Console.WriteLine($"JWT:Secret: {configuration["JWT:Secret"]}");
+                            Console.WriteLine($"JWT:ValidAudience: {configuration["JWT:ValidAudience"]}");
+                            Console.WriteLine($"JWT:ValidIssuer: {configuration["JWT:ValidIssuer"]}");
                             options.TokenValidationParameters = new TokenValidationParameters()
                             {
                                 ValidateIssuer = true,

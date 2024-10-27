@@ -104,3 +104,6 @@
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.json
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.Development.json
 /home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/appsettings.Production.json
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/IdentityModel.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/IdentityModel.AspNetCore.OAuth2Introspection.dll
+/home/valentin/RiderProjects/MuseWave/MuseWave.API/bin/Debug/net8.0/IdentityServer4.AccessTokenValidation.dll

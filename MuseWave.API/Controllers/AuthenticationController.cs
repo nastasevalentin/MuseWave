@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using MuseWave.API.Models;
 using MuseWave.Application.Contracts.Identity;
@@ -104,6 +105,14 @@ public class AuthenticationController : ControllerBase
             UserName = this.currentUserService.GetCurrentUserId(),
             Claims = this.currentUserService.GetCurrentClaimsPrincipal().Claims.ToDictionary(c => c.Type, c => c.Value)
         };
+    }
+    
+    
+    [HttpGet("test-auth")]
+    [Authorize]
+    public IActionResult TestAuth()
+    {
+        return Ok("Token is valid!");
     }
 
 }

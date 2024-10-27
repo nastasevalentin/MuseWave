@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuseWave.Application.Features.Songs.Commands.CreateSong;
@@ -12,6 +13,7 @@ namespace MuseWave.API.Controllers
     public class SongsController : ApiControllerBase
     {
         [HttpPost]
+        [Authorize(Roles = "Admin,Artist")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> Create(CreateSongCommand command)
         {

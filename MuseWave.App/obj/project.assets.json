@@ -2739,7 +2739,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Identity >= 1.0.0"
+      "Identity >= 1.0.0",
+      "MediatR >= 12.4.1"
     ]
   },
   "packageFolders": {
@@ -2782,6 +2783,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[12.4.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
