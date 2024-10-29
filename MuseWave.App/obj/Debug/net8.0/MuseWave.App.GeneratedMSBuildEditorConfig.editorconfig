@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/valentin/RiderProjects/MuseWave/MuseWave.App
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/AlbumPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWxidW1QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/CreateAlbum.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlQWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

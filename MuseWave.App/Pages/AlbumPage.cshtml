@@ -1,0 +1,22 @@
+@page "/albums/{title}"
+@model MuseWave.App.Pages.AlbumPage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@Model.Album?.Title</title>
+</head>
+<body>
+<div>
+    <h1>@Model.Album?.Title</h1>
+    <p>Genre: @Model.Album?.Genre</p>
+    <p>Release Date: @Model.Album?.ReleaseDate.ToString("yyyy-MM-dd")</p>
+    <img src="@Model.Album?.CoverImage" alt="Cover Image" />
+</div>
+</body>
+</html>
