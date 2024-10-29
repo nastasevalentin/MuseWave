@@ -1,0 +1,14 @@
+@page
+@model MuseWave.App.Pages.CreateSongModel
+@{
+    Layout = "_Layout";
+}
+
+<h2>Create Song</h2>
+<form method="post">
+    <div>
+        <label>Title</label>
+        <input type="text" asp-for="Song.Title" />
+    </div>
+    <button type="submit">Create</button>
+</form>
