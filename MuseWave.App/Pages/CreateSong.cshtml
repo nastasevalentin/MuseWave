@@ -2,6 +2,7 @@
 @model MuseWave.App.Pages.CreateSongModel
 @{
     Layout = "_Layout";
+    var today = DateTime.Now.ToString("yyyy-MM-dd");
 }
 
 <h2>Create Song</h2>
@@ -9,6 +10,12 @@
     <div>
         <label>Title</label>
         <input type="text" asp-for="Song.Title" />
+        <label>Audio file</label>
+        <input type="text" asp-for="Song.AudioFile" />
+        <label>Genre</label>
+        <input type="text" asp-for="Song.Genre" />
+        <label>Release Date</label>
+        <input type="date" asp-for="Song.ReleaseDate" value="@today" />
     </div>
     <button type="submit">Create</button>
 </form>

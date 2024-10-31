@@ -17,6 +17,35 @@
     <p>Genre: @Model.Album?.Genre</p>
     <p>Release Date: @Model.Album?.ReleaseDate.ToString("yyyy-MM-dd")</p>
     <img src="@Model.Album?.CoverImage" alt="Cover Image" />
+    
+    <button onclick="location.href='@Url.Page("/CreateSong", new { albumId = Model.Album?.Id })'">
+        Create Song
+    </button>
 </div>
+
+@if (Model.Songs != null && Model.Songs.Any())
+{
+    <div>
+        <h2>Songs</h2>
+        <ul>
+            @foreach (var song in Model.Songs)
+            {
+                <li>
+                    <p>Title: @song.Title</p>
+                    <p>Genre: @song.Genre</p>
+                    <p>Release Date: @song.ReleaseDate.ToString("yyyy-MM-dd")</p>
+                    <audio controls>
+                        <source src="@song.AudioFile" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>No songs available for this album.</p>
+}
 </body>
 </html>

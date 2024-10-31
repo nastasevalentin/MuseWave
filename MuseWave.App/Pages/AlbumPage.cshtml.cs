@@ -7,11 +7,14 @@ namespace MuseWave.App.Pages;
 
 public class AlbumPage : PageModel
 {
-    private readonly IAlbumRepository _albumRepository;
+    public IReadOnlyList<Song> Songs { get; private set; }
 
-    public AlbumPage(IAlbumRepository albumRepository)
+    private readonly IAlbumRepository _albumRepository;
+    private readonly ISongRepository _songRepository;
+    public AlbumPage(IAlbumRepository albumRepository, ISongRepository songRepository)
     {
         _albumRepository = albumRepository;
+        _songRepository = songRepository;
     }
 
     [BindProperty(SupportsGet = true)]
@@ -29,6 +32,11 @@ public class AlbumPage : PageModel
             if (result.IsSuccess)
             {
                 Album = result.Value;
+                var songsResult = await _songRepository.GetAllSongsByAlbumId(album.Id);
+                if (songsResult.IsSuccess)
+                {
+                    Songs = songsResult.Value;
+                }
             }
         }
     }

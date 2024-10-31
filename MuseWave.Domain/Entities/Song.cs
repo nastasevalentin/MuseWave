@@ -23,6 +23,10 @@ public class Song
         ReleaseDate = releaseDate;
     }
     
+    public Song()
+    {
+    }
+    
     public static Result<Song> Create(string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
     {
         if (string.IsNullOrWhiteSpace(title))
