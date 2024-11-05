@@ -42,7 +42,6 @@
                 }
             </div>
         }
-    }
         else
         {
             <p>You don't have any albums.</p>
@@ -62,6 +61,36 @@
         else
         {
             <p>You don't have any songs.</p>
+        }
+    }
+    else if (!Model.appUser.HasRequestedRole)
+    {
+        <button onclick="location.href='/RequestArtistRole'">Request Artist Role</button>
+    }
+    
+    @if (Model.IsAdmin)
+    {
+        <h3>Artist Role Requests</h3>
+        @if (Model.ArtistRequests.Any())
+        {
+            <ul>
+                @foreach (var request in Model.ArtistRequests)
+                {
+                    <li>
+                        @request.UserName
+                        <form method="post" asp-page-handler="Approve" asp-route-id="@request.Id">
+                            <button type="submit">Approve</button>
+                        </form>
+                        <form method="post" asp-page-handler="Decline" asp-route-id="@request.Id">
+                            <button type="submit">Decline</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No artist role requests.</p>
         }
     }
 </div>

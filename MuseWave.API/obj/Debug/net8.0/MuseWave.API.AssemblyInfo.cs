@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc0ab4338f502f6b5b6b0be4286d9d936481e1eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd5fcf28a36a2622e4a6f7988661f8c186af1c84")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuseWave.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
