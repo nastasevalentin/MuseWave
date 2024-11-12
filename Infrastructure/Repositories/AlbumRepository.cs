@@ -18,5 +18,11 @@ namespace Infrastructure.Repositories
             var albums = await context.Albums.Where(a => a.ArtistId == artistId).ToListAsync();
             return Result<IReadOnlyList<Album>>.Success(albums);
         }
+        
+        public virtual async Task<Result<IReadOnlyList<Album>>> GetAllAlbums()
+        {
+            var albums = await context.Albums.ToListAsync();
+            return Result<IReadOnlyList<Album>>.Success(albums);
+        }
     }
 }

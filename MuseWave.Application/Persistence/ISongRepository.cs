@@ -6,6 +6,10 @@ namespace MuseWave.Application.Persistence
 {
     public interface ISongRepository : IAsyncRepository<Song>
     {
+        Task<Result<IReadOnlyList<Song>>> GetAllSongs();
+
         Task<Result<IReadOnlyList<Song>>> GetAllSongsByAlbumId(Guid albumId);
+        Task<Result<IReadOnlyList<Song>>> GetAllSongsByArtistId(Guid artistId);
+
     }
 }

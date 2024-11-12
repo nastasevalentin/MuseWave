@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVxdWVzdEFydGlzdFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

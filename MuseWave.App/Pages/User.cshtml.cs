@@ -46,7 +46,7 @@ namespace MuseWave.App.Pages
                 if (IsArtist || IsAdmin)
                 {
                     Albums = await FetchAlbumsForUser(appUser.Id.ToString());
-                    Songs = FetchSongsForUser(appUser.Id.ToString());
+                    Songs = await FetchSongsForUser(appUser.Id.ToString());
                 }
                 if (IsAdmin)
                 {
@@ -102,8 +102,27 @@ namespace MuseWave.App.Pages
             return new List<Album>();
         }
 
-        private List<Song> FetchSongsForUser(string userId)
+        private async Task<List<Song>> FetchSongsForUser(string userId)
         {
+            try
+            {
+                var response = await httpClient.GetAsync($"https://localhost:7165/api/v1/Songs/Artist/{userId}");
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    };
+                    var jsonObject = JsonNode.Parse(jsonResponse);
+                    var songs = jsonObject["songs"].Deserialize<List<Song>>(options);
+                    return songs ?? new List<Song>();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching albums: {ex.Message}");
+            }
             return new List<Song>();
         }
     }
