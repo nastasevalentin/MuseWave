@@ -13,7 +13,7 @@ public class GlobalMWContext : DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=master;User Id=sa;Password=!Tentacion123;TrustServerCertificate=true;");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=MWDB;User Id=sa;Password=!Tentacion123;TrustServerCertificate=true;");
     }
 
     
