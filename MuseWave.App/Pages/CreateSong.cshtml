@@ -6,16 +6,28 @@
 }
 
 <h2>Create Song</h2>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <div>
         <label>Title</label>
         <input type="text" asp-for="Song.Title" />
+        <span asp-validation-for="Song.Title" class="text-danger"></span>
+        
         <label>Audio file</label>
-        <input type="text" asp-for="Song.AudioFile" />
+        <input type="file" asp-for="AudioFile" onchange="document.getElementById('Song_AudioFile').value = this.value.split('\\').pop();" />
+        <span asp-validation-for="AudioFile" class="text-danger"></span>
+        <input type="hidden" id="Song_AudioFile" asp-for="Song.AudioFile" />
+        
         <label>Genre</label>
         <input type="text" asp-for="Song.Genre" />
+        <span asp-validation-for="Song.Genre" class="text-danger"></span>
+        
         <label>Release Date</label>
         <input type="date" asp-for="Song.ReleaseDate" value="@today" />
+        <span asp-validation-for="Song.ReleaseDate" class="text-danger"></span>
     </div>
     <button type="submit">Create</button>
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

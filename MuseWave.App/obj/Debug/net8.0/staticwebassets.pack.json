@@ -245,6 +245,14 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test.mp3",
+      "PackagePath": "staticwebassets/uploads/test.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
+      "PackagePath": "staticwebassets/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MuseWave.App.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

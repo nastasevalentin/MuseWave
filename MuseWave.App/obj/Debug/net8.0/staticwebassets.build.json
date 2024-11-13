@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZkVXOXyKci/n11sF0ULm7PrPkNfPd6g0VMW13uA15C4=",
+  "Hash": "vMNs3xpd/PRo5SYsPUjqk2FIiizCNbSma1FO9thoAj4=",
   "Source": "MuseWave.App",
   "BasePath": "_content/MuseWave.App",
   "Mode": "Default",
@@ -1193,6 +1193,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
+      "SourceId": "MuseWave.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/",
+      "BasePath": "_content/MuseWave.App",
+      "RelativePath": "uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3"
+    },
+    {
+      "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test.mp3",
+      "SourceId": "MuseWave.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/",
+      "BasePath": "_content/MuseWave.App",
+      "RelativePath": "uploads/test.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/test.mp3"
     }
   ]
 }
