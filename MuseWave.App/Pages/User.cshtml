@@ -54,7 +54,13 @@
             <ul>
                 @foreach (var song in Model.Songs)
                 {
-                    <li>@song.Title</li>
+                    <li>
+                        @song.Title
+                        <audio controls>
+                            <source src="@song.AudioFile" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </li>
                 }
             </ul>
         }

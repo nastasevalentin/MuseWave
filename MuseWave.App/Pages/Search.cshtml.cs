@@ -46,21 +46,21 @@ public class SearchModel : PageModel
                 var songs = await FetchSongs();
                 SearchResults.AddRange(songs
                     .Where(s => s.Title.Contains(query, StringComparison.OrdinalIgnoreCase))
-                    .Select(s => $"Song: {s.Title}"));
+                    .Select(s => $"Song: {s.Title} | Audio: {s.AudioFile}"));
             }
             else if (category == "Albums")
             {
                 var albums = await FetchAlbums();
                 SearchResults.AddRange(albums
                     .Where(a => a.Title.Contains(query, StringComparison.OrdinalIgnoreCase))
-                    .Select(a => $"Album: {a.Title}"));
+                    .Select(a => $"Album: {a.Title} | URL: /albums/{a.Title}"));
             }
             else if (category == "Artists")
             {
                 var artists = await userManager.Users.ToListAsync();
                 SearchResults.AddRange(artists
                     .Where(u => u.UserName.Contains(query, StringComparison.OrdinalIgnoreCase))
-                    .Select(u => $"Artist: {u.UserName}"));
+                    .Select(u => $"Artist: {u.UserName} | URL: /artists/{u.UserName}"));
             }
         }
 

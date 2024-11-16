@@ -22,7 +22,49 @@
         <ul>
             @foreach (var result in Model.SearchResults)
             {
-                <li>@result</li>
+                <li>
+                    @if (Model.SelectedCategory == "Songs")
+                    { 
+                        var parts = result.Split(" | Audio: ");
+                        var title = parts[0].Replace("Song: ", "");
+                        var audioFile = parts.Length > 1 ? parts[1] : null;
+                
+                        <div>
+                            <p>@title</p>
+                            @if (!string.IsNullOrEmpty(audioFile))
+                            {
+                                <audio controls>
+                                <source src="/@audioFile" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                                </audio> 
+                            }
+                            </div>
+                    }
+                    else if (Model.SelectedCategory == "Albums")
+                    {
+                        var parts = result.Split(" | URL: ");
+                        var title = parts[0].Replace("Album: ", "");
+                        var url = parts.Length > 1 ? parts[1] : null;
+
+                        <div>
+                            <a href="@url">@title</a>
+                        </div>
+                    }
+                    else if (Model.SelectedCategory == "Artists")
+                    {
+                        var parts = result.Split(" | URL: ");
+                        var name = parts[0].Replace("Artist: ", "");
+                        var url = parts.Length > 1 ? parts[1] : null;
+
+                        <div>
+                            <a href="@url">@name</a>
+                        </div>
+                    }
+                    else 
+                    { 
+                        @result
+                    }
+                    </li>
             }
         </ul>
     }

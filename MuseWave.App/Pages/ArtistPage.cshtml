@@ -1,0 +1,51 @@
+@page "/artists/{username}"
+@model MuseWave.App.Pages.ArtistModel
+@{
+    ViewData["Title"] = "Artist";
+}
+
+<div class="container">
+    <h1>@Model.Artist.UserName</h1>
+
+    <h2>Albums</h2>
+    @if (Model.Albums.Any())
+    {
+        <div class="card-deck">
+            @foreach (var album in Model.Albums)
+            {
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="/albums/@album.Title" class="btn btn-primary">@album.Title</a>
+                        </h5>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No albums found.</p>
+    }
+
+    <h2>Songs</h2>
+    @if (Model.Songs.Any())
+    {
+        <ul>
+            @foreach (var song in Model.Songs)
+            {
+                <li>
+                    @song.Title
+                    <audio controls>
+                        <source src="/@song.AudioFile" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No songs found.</p>
+    }
+</div>  

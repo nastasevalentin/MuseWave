@@ -249,8 +249,32 @@
       "PackagePath": "staticwebassets/uploads/test.mp3"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_0541903e-62df-4cf6-9b0b-5c61abb19036.mp3",
+      "PackagePath": "staticwebassets/uploads/test_0541903e-62df-4cf6-9b0b-5c61abb19036.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_07f8ea84-674b-470f-8e2e-a9e699668386.mp3",
+      "PackagePath": "staticwebassets/uploads/test_07f8ea84-674b-470f-8e2e-a9e699668386.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_17d2bdc3-3e51-4fa3-8022-cee56a636078.mp3",
+      "PackagePath": "staticwebassets/uploads/test_17d2bdc3-3e51-4fa3-8022-cee56a636078.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_22371a40-06d4-4139-9af3-36008b128db0.mp3",
+      "PackagePath": "staticwebassets/uploads/test_22371a40-06d4-4139-9af3-36008b128db0.mp3"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
       "PackagePath": "staticwebassets/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3",
+      "PackagePath": "staticwebassets/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3",
+      "PackagePath": "staticwebassets/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MuseWave.App.Microsoft.AspNetCore.StaticWebAssets.props",

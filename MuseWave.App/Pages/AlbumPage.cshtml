@@ -2,7 +2,7 @@
 @model MuseWave.App.Pages.AlbumPage
 
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@
                     <p>Genre: @song.Genre</p>
                     <p>Release Date: @song.ReleaseDate.ToString("yyyy-MM-dd")</p>
                     <audio controls>
-                        <source src="@song.AudioFile" type="audio/mpeg">
+                        <source src="/@song.AudioFile" type="audio/mpeg" onerror="console.error('Error loading audio file:', this.src)">
                         Your browser does not support the audio element.
                     </audio>
                 </li>

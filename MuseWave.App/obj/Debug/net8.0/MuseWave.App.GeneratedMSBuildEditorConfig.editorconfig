@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWxidW1QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/ArtistPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJ0aXN0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/valentin/RiderProjects/MuseWave/MuseWave.App/Pages/CreateAlbum.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlQWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
