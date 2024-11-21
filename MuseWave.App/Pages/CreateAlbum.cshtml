@@ -6,13 +6,18 @@
 }
 
 <h2>Create Album</h2>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <div>
         <label>Title</label>
         <input type="text" asp-for="Album.Title" />
         <label>Genre</label>
         <input type="text" asp-for="Album.Genre"/>
-        <input type="text" asp-for="Album.CoverImage"/>
+        
+        <label>Cover Image</label>
+        <input type="file" asp-for="CoverImage" onchange="document.getElementById('Album_CoverImage').value = this.value.split('\\').pop();" />
+        <span asp-validation-for="CoverImage" class="text-danger"></span>
+        <input type="hidden" id="Album_CoverImage" asp-for="Album.CoverImage" />
+        
         <input type="date" asp-for="Album.ReleaseDate" value="@today" />
 
     </div>

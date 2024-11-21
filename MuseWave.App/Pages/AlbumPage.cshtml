@@ -16,7 +16,9 @@
     <h1>@Model.Album?.Title</h1>
     <p>Genre: @Model.Album?.Genre</p>
     <p>Release Date: @Model.Album?.ReleaseDate.ToString("yyyy-MM-dd")</p>
-    <img src="@Model.Album?.CoverImage" alt="Cover Image" />
+    <img src="/@Model.Album.CoverImage" alt="Cover Image" style="width: 240px; height: 240px;" />
+    
+    <br />
     
     <button onclick="location.href='@Url.Page("/CreateSong", new { albumId = Model.Album?.Id })'">
         Create Song

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MuseWave.App.bundle.scp.css"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg",
+      "PackagePath": "staticwebassets/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -271,6 +275,10 @@
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3",
       "PackagePath": "staticwebassets/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_4bb4acf9-302b-4b44-aa15-122a4043e1de.mp3",
+      "PackagePath": "staticwebassets/uploads/test_4bb4acf9-302b-4b44-aa15-122a4043e1de.mp3"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3",
