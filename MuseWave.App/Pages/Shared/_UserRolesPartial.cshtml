@@ -1,0 +1,95 @@
+@model MuseWave.App.Pages.UserModel
+
+<div>
+    <h3>Your Roles</h3>
+    @if (Model.Roles.Any())
+    {
+        <ul>
+            @foreach (var role in Model.Roles)
+            {
+                <li>@role</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>You don't have any roles.</p>
+    }
+
+    @if (Model.IsArtist || Model.IsAdmin)
+    {
+        <h3>Your Albums</h3>
+        <button onclick="location.href='/CreateAlbum'">Create Album</button>
+        @if (Model.Albums.Any())
+        {
+            <div class="card-deck">
+                @foreach (var album in Model.Albums)
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/albums/@album.Title" class="btn btn-primary">@album.Title</a>
+                            </h5>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>You don't have any albums.</p>
+        }
+
+        <h3>Your Songs</h3>
+        <button onclick="location.href='/CreateSong'">Create Song</button>
+        @if (Model.Songs.Any())
+        {
+            <ul>
+                @foreach (var song in Model.Songs)
+                {
+                    <li>
+                        @song.Title
+                        <audio controls>
+                            <source src="@song.AudioFile" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>You don't have any songs.</p>
+        }
+    }
+    else if (!Model.appUser.HasRequestedRole)
+    {
+        <button onclick="location.href='/RequestArtistRole'">Request Artist Role</button>
+    }
+    
+    @if (Model.IsAdmin)
+    {
+        <h3>Artist Role Requests</h3>
+        @if (Model.ArtistRequests.Any())
+        {
+            <ul>
+                @foreach (var request in Model.ArtistRequests)
+                {
+                    <li>
+                        @request.UserName
+                        <form method="post" asp-page-handler="Approve" asp-route-id="@request.Id">
+                            <button type="submit">Approve</button>
+                        </form>
+                        <form method="post" asp-page-handler="Decline" asp-route-id="@request.Id">
+                            <button type="submit">Decline</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No artist role requests.</p>
+        }
+    }
+</div>

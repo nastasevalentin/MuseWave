@@ -5,8 +5,32 @@
       "PackagePath": "staticwebassets/MuseWave.App.bundle.scp.css"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Screenshot from 2024-01-03 19-02-26_eb111599-f483-478e-825a-62bc9d4965d5.png",
+      "PackagePath": "staticwebassets/covers/Screenshot from 2024-01-03 19-02-26_eb111599-f483-478e-825a-62bc9d4965d5.png"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg",
       "PackagePath": "staticwebassets/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_3a5a4a49-6df5-45af-aa6a-33b8d4adaa8a.jpg",
+      "PackagePath": "staticwebassets/covers/dog_3a5a4a49-6df5-45af-aa6a-33b8d4adaa8a.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_6cc7eba7-c13c-41c1-8f3a-7ff3a95ca2bd.jpg",
+      "PackagePath": "staticwebassets/covers/dog_6cc7eba7-c13c-41c1-8f3a-7ff3a95ca2bd.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_e6a9783c-e508-4287-8402-d50661efa0c6.jpg",
+      "PackagePath": "staticwebassets/covers/dog_e6a9783c-e508-4287-8402-d50661efa0c6.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_f61c5312-55ad-4c2d-9c14-7a7cada79562.jpg",
+      "PackagePath": "staticwebassets/covers/dog_f61c5312-55ad-4c2d-9c14-7a7cada79562.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_fd5737df-1bb5-4a31-9e24-5dfadca32584.jpg",
+      "PackagePath": "staticwebassets/covers/dog_fd5737df-1bb5-4a31-9e24-5dfadca32584.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/css/site.css",
