@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rov31ohseUGOqGE/DSG/l5R6g4Ki5Eylom5vnDSUlxM=",
+  "Hash": "g534tm+MI74mMH8l4NccjbXdJeoGRFrXb95gwkLLNu8=",
   "Source": "MuseWave.App",
   "BasePath": "_content/MuseWave.App",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/obj/Debug/net8.0/scopedcss/projectbundle/MuseWave.App.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg",
+      "SourceId": "MuseWave.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/",
+      "BasePath": "_content/MuseWave.App",
+      "RelativePath": "covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg"
     },
     {
       "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg",

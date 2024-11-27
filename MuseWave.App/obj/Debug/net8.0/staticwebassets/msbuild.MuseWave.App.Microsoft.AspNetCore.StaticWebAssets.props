@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MuseWave.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MuseWave.App</BasePath>
+      <RelativePath>covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MuseWave.App</SourceId>

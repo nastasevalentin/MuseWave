@@ -30,6 +30,9 @@
                             <h5 class="card-title">
                                 <a href="/albums/@album.Title" class="btn btn-primary">@album.Title</a>
                             </h5>
+                            <form method="post" asp-page-handler="DeleteAlbum" asp-route-id="@album.Id">
+                                <button type="submit">Delete</button>
+                            </form>
                         </div>
                     </div>
                 }
@@ -53,6 +56,9 @@
                             <source src="@song.AudioFile" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
+                        <form method="post" asp-page-handler="DeleteSong" asp-route-id="@song.Id">
+                            <button type="submit">Delete</button>
+                        </form>
                     </li>
                 }
             </ul>

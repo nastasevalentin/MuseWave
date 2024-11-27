@@ -10,7 +10,9 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
+using Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using MuseWave.Identity;
 
 namespace MuseWave.App.Pages
 {
@@ -18,7 +20,8 @@ namespace MuseWave.App.Pages
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly HttpClient httpClient;
-
+        private readonly GlobalMWContext mwContext;
+        
         public ApplicationUser? appUser;
         public List<Album> Albums { get; set; } = new List<Album>();
         public List<Song> Songs { get; set; } = new List<Song>();
@@ -27,12 +30,62 @@ namespace MuseWave.App.Pages
         public bool IsAdmin { get; set; }
         public List<ApplicationUser> ArtistRequests { get; set; } = new List<ApplicationUser>();
 
-        public UserModel(UserManager<ApplicationUser> userManager, IHttpClientFactory httpClientFactory)
+        public UserModel(UserManager<ApplicationUser> userManager, IHttpClientFactory httpClientFactory, GlobalMWContext mwContext)
         {
             this.userManager = userManager;
             this.httpClient = httpClientFactory.CreateClient(nameof(UserModel));
+            this.mwContext = mwContext;
         }
+        public async Task<IActionResult> OnPostDeleteSongAsync(string id)
+        {
+            if (Guid.TryParse(id, out Guid songId))
+            {
+                var song = await mwContext.Songs.FindAsync(songId);
+                if (song != null)
+                {
+                    var user = await userManager.GetUserAsync(User);
+                    var isAdmin = await userManager.IsInRoleAsync(user, "Admin");
+                    var isArtist = song.ArtistId == Guid.Parse(user.Id);
 
+                    if (isAdmin || isArtist)
+                    {
+                        mwContext.Songs.Remove(song);
+                        await mwContext.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        return Forbid();
+                    }
+                }
+            }
+            return RedirectToPage();
+        }
+        
+        public async Task<IActionResult> OnPostDeleteAlbumAsync(string id)
+        {
+            if (Guid.TryParse(id, out Guid albumId))
+            {
+                var album = await mwContext.Albums.FindAsync(albumId);
+                if (album != null)
+                {
+                    var user = await userManager.GetUserAsync(User);
+                    var isAdmin = await userManager.IsInRoleAsync(user, "Admin");
+                    var isArtist = album.ArtistId == Guid.Parse(user.Id);
+
+                    if (isAdmin || isArtist)
+                    {
+                        mwContext.Albums.Remove(album);
+                        await mwContext.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        return Forbid();
+                    }
+                }
+            }
+            return RedirectToPage();
+        }
+        
         public async Task OnGetAsync()
         {
             var userName = User.Identity.Name;
