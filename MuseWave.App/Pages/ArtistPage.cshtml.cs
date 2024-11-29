@@ -16,7 +16,7 @@ namespace MuseWave.App.Pages
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly GlobalMWContext dbContext;
-
+        
         public ApplicationUser Artist { get; set; }
         public List<Album> Albums { get; set; } = new List<Album>();
         public List<Song> Songs { get; set; } = new List<Song>();
@@ -46,6 +46,55 @@ namespace MuseWave.App.Pages
                 .ToListAsync<Song>();
 
             return Page();
+        }
+        public async Task<IActionResult> OnPostDeleteSongAsync(string id)
+        {
+            if (Guid.TryParse(id, out Guid songId))
+            {
+                var song = await dbContext.Songs.FindAsync(songId);
+                if (song != null)
+                {
+                    var user = await userManager.GetUserAsync(User);
+                    var isAdmin = await userManager.IsInRoleAsync(user, "Admin");
+                    var isArtist = song.ArtistId == Guid.Parse(user.Id);
+
+                    if (isAdmin || isArtist)
+                    {
+                        dbContext.Songs.Remove(song);
+                        await dbContext.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        return Forbid();
+                    }
+                }
+            }
+            return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnPostDeleteAlbumAsync(string id)
+        {
+            if (Guid.TryParse(id, out Guid albumId))
+            {
+                var album = await dbContext.Albums.FindAsync(albumId);
+                if (album != null)
+                {
+                    var user = await userManager.GetUserAsync(User);
+                    var isAdmin = await userManager.IsInRoleAsync(user, "Admin");
+                    var isArtist = album.ArtistId == Guid.Parse(user.Id);
+
+                    if (isAdmin || isArtist)
+                    {
+                        dbContext.Albums.Remove(album);
+                        await dbContext.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        return Forbid();
+                    }
+                }
+            }
+            return RedirectToPage();
         }
     }
 }
