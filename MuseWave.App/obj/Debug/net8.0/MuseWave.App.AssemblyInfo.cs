@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuseWave.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a01b5da29027937c3abd70d0d7297542bd4581ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+717f50fe80b1a716c9ca7fdd05993707a082bad4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuseWave.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuseWave.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

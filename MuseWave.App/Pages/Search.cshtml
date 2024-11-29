@@ -24,21 +24,28 @@
             {
                 <li>
                     @if (Model.SelectedCategory == "Songs")
-                    { 
+                    {
                         var parts = result.Split(" | Audio: ");
                         var title = parts[0].Replace("Song: ", "");
-                        var audioFile = parts.Length > 1 ? parts[1] : null;
-                
+                        var audioFile = parts.Length > 1 ? parts[1].Split(" | Album Id: ")[0] : null;
+                        var albumParts = parts.Length > 1 ? parts[1].Split(" | Album Id: ")[1].Split(" | Album Title: ") : null;
+                        var albumId = albumParts != null ? albumParts[0] : null;
+                        var albumTitle = albumParts != null ? albumParts[1] : null;
+                        
                         <div>
                             <p>@title</p>
                             @if (!string.IsNullOrEmpty(audioFile))
                             {
                                 <audio controls>
-                                <source src="/@audioFile" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                                </audio> 
+                                    <source src="/@audioFile" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
                             }
-                            </div>
+                            @if (!string.IsNullOrEmpty(albumId) && !string.IsNullOrEmpty(albumTitle))
+                            {
+                                <p><a href="/albums/@albumTitle">View Album: @albumTitle</a></p>
+                            }
+                        </div>
                     }
                     else if (Model.SelectedCategory == "Albums")
                     {

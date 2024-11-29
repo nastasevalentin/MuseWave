@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bJ/LcWM0NGwjX9rG8OtudY3Z+yiiYi+mWiADIRLYFYM=",
+  "Hash": "ZAoeIp3WzmnEKngd8HXtrJZtjky17yMj4yGOHmflbao=",
   "Source": "MuseWave.App",
   "BasePath": "_content/MuseWave.App",
   "Mode": "Default",
@@ -1423,6 +1423,25 @@
       "OriginalItemSpec": "wwwroot/uploads/test_22371a40-06d4-4139-9af3-36008b128db0.mp3"
     },
     {
+      "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_39009298-ed8f-4d2d-824d-3f9849882189.mp3",
+      "SourceId": "MuseWave.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/",
+      "BasePath": "_content/MuseWave.App",
+      "RelativePath": "uploads/test_39009298-ed8f-4d2d-824d-3f9849882189.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/test_39009298-ed8f-4d2d-824d-3f9849882189.mp3"
+    },
+    {
       "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
       "SourceId": "MuseWave.App",
       "SourceType": "Discovered",
@@ -1497,6 +1516,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/test_759fcb3d-8a24-4e38-8afc-6d12c2c09c99.mp3"
+    },
+    {
+      "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_8104eaf1-680d-4b0b-8314-eeaf798b1af8.mp3",
+      "SourceId": "MuseWave.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/",
+      "BasePath": "_content/MuseWave.App",
+      "RelativePath": "uploads/test_8104eaf1-680d-4b0b-8314-eeaf798b1af8.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/test_8104eaf1-680d-4b0b-8314-eeaf798b1af8.mp3"
     },
     {
       "Identity": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3",

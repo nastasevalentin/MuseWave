@@ -24,6 +24,7 @@ public class SearchModel : PageModel
     public List<string> SearchResults { get; set; } = new List<string>();
     public string SelectedCategory { get; set; }
     public string Query { get; set; }
+    public List<Album> Albums { get; set; } = new List<Album>();
 
     public SearchModel(UserManager<ApplicationUser> userManager, IHttpClientFactory httpClientFactory, GlobalMWContext mwContext)
     {
@@ -48,9 +49,12 @@ public class SearchModel : PageModel
             if (category == "Songs")
             {
                 var songs = await FetchSongs();
-                SearchResults.AddRange(songs
-                    .Where(s => s.Title.Contains(query, StringComparison.OrdinalIgnoreCase))
-                    .Select(s => $"Song: {s.Title} | Audio: {s.AudioFile}"));
+                foreach (var song in songs.Where(s => s.Title.Contains(query, StringComparison.OrdinalIgnoreCase)))
+                {
+                    var album = await mwContext.Albums.FindAsync(song.AlbumId);
+                    var albumTitle = album != null ? album.Title : "Unknown Album";
+                    SearchResults.Add($"Song: {song.Title} | Audio: {song.AudioFile} | Album Id: {song.AlbumId} | Album Title: {albumTitle}");
+                }
             }
             else if (category == "Albums")
             {
