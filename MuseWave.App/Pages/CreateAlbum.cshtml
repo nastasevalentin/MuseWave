@@ -6,28 +6,43 @@
 }
 
 <h2>Create Album</h2>
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" class="create-album-form">
     <div>
         <label>Title</label>
         <input type="text" asp-for="Album.Title" />
+    </div>
+    <div>
         <label>Genre</label>
         <input type="text" asp-for="Album.Genre"/>
-
+    </div>
+    <div>
         <label>Cover Image</label>
         <input type="file" asp-for="CoverImage" id="coverImageInput" onchange="document.getElementById('Album_CoverImage').value = this.value.split('\\').pop();" />
         <span asp-validation-for="CoverImage" class="text-danger"></span>
         <input type="hidden" id="Album_CoverImage" asp-for="Album.CoverImage" />
-
+    </div>
+    <div>
+        <label>Release Date</label>
         <input type="date" asp-for="Album.ReleaseDate" value="@today" />
     </div>
     <img id="coverImagePreview" src="#" alt="Cover Image Preview" style="display:none; max-width: 400px; max-height: 400px; margin-top: 20px;"/>
-    <button type="submit">Create</button>
+    <button class="btn btn-primary" type="submit">Create</button>
 </form>
+
+<style>
+    .create-album-form div {
+        margin-bottom: 10px;
+    }
+    .create-album-form label,
+    .create-album-form input,
+    .create-album-form span {
+        display: block;
+    }
+</style>
 
 @section Scripts {
     <script>
         $(document).ready(function() {
-            // Preview the selected cover image
             $("#coverImageInput").change(function() {
                 var reader = new FileReader();
                 reader.onload = function(e) {
@@ -38,21 +53,18 @@
 
             // AJAX call to submit the form data
             $("form").submit(function(event) {
-                event.preventDefault(); // Prevent the default form submission
+                event.preventDefault(); 
 
-                // Check if a cover image is selected
                 if (!$("#coverImageInput").val()) {
                     alert("Please select a cover image.");
                     return;
                 }
 
-                // Check if the title is filled
                 if (!$("input[name='Album.Title']").val()) {
                     alert("Please enter a title.");
                     return;
                 }
 
-                // Check if the genre is filled
                 if (!$("input[name='Album.Genre']").val()) {
                     alert("Please enter a genre.");
                     return;

@@ -44,6 +44,7 @@ public class SearchModel : PageModel
         SearchResults.Clear();
         SelectedCategory = category;
         Query = query;
+        
         if (!string.IsNullOrEmpty(query))
         {
             if (category == "Songs")

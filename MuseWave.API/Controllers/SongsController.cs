@@ -71,7 +71,8 @@ namespace MuseWave.API.Controllers
             return Ok(result);
         }
         
-        [HttpDelete]
+        [HttpDelete("{id:Guid}")]
+        [Authorize(Roles = "Admin,Artist")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Delete(Guid id)
         {

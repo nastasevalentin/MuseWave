@@ -1,0 +1,7 @@
+{
+  "Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/valentin\/RiderProjects\/MuseWave\/Identity",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/valentin\/RiderProjects\/MuseWave\/Infrastructure",
+  "MuseWave.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/valentin\/RiderProjects\/MuseWave\/MuseWave.API",
+  "MuseWave.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/valentin\/RiderProjects\/MuseWave\/MuseWave.Application",
+  "MuseWave.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/valentin\/RiderProjects\/MuseWave\/MuseWave.Domain"
+}

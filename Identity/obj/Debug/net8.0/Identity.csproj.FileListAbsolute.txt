@@ -1,4 +1,5 @@
 /home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Identity.deps.json
+/home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Identity.runtimeconfig.json
 /home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Identity.dll
 /home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Identity.pdb
 /home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Infrastructure.dll
@@ -17,6 +18,5 @@
 /home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/Identity.dll
 /home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/refint/Identity.dll
 /home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/Identity.pdb
-/home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/ref/Identity.dll
-/home/valentin/RiderProjects/MuseWave/Identity/bin/Debug/net8.0/Identity.runtimeconfig.json
 /home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/Identity.genruntimeconfig.cache
+/home/valentin/RiderProjects/MuseWave/Identity/obj/Debug/net8.0/ref/Identity.dll

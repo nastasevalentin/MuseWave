@@ -32,14 +32,12 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
-// Add services to the container.
 builder.Services.AddInfrastrutureToDI(
     builder.Configuration);
 builder.Services.AddInfrastrutureIdentityToDI(builder.Configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddControllers();
 builder.Services.AddScoped<RoleService>();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(c =>
@@ -86,36 +84,7 @@ builder.Services.AddSwaggerGen(c =>
 
 
 var app = builder.Build();
-// using (var scope = app.Services.CreateScope())
-// {
-//     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-//     if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-//     {
-//         await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
-//     }
-//
-//     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-//     var roleService = scope.ServiceProvider.GetRequiredService<RoleService>();
-//
-//     var user = await userManager.FindByNameAsync("valibi80");
-//     if (user != null)
-//     {
-//         var result = await roleService.AssignRoleToUserAsync(user, UserRoles.Admin);
-//         if (result)
-//         {
-//             Console.WriteLine("User 'valibi80' has been assigned the 'Admin' role.");
-//         }
-//         else
-//         {
-//             Console.WriteLine("Failed to assign the 'Admin' role to user 'valibi80'.");
-//         }
-//     }
-//     else
-//     {
-//         Console.WriteLine("User 'valibi80' not found.");
-//     }
-// }
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -129,3 +98,9 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+public partial class Program
+{
+
+}
