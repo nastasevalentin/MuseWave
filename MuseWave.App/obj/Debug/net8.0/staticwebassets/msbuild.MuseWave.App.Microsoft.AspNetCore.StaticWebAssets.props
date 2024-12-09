@@ -16,54 +16,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\album1_6090cd5e-1ea1-4ccb-9156-e50a8f731a0e.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_17c2091c-ea5b-47e2-9c59-04380e6e8517.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>covers/dog_17c2091c-ea5b-47e2-9c59-04380e6e8517.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_17c2091c-ea5b-47e2-9c59-04380e6e8517.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_cbcb564b-c8a4-4419-b9d1-b9854810d906.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>covers/dog_cbcb564b-c8a4-4419-b9d1-b9854810d906.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_cbcb564b-c8a4-4419-b9d1-b9854810d906.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_dbb25bc7-2869-4902-af5c-41c94fdbb0ad.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>covers/dog_dbb25bc7-2869-4902-af5c-41c94fdbb0ad.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\dog_dbb25bc7-2869-4902-af5c-41c94fdbb0ad.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\covers\Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MuseWave.App</SourceId>
@@ -1056,22 +1008,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\MuseWave.App.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\dog_88173d66-cdc1-44a2-a99f-a8b2806be40b.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/dog_88173d66-cdc1-44a2-a99f-a8b2806be40b.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\dog_88173d66-cdc1-44a2-a99f-a8b2806be40b.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - Blue Suede Shoes (1956)_0490b6f2-ee20-4869-b64e-444c101f993d.mp3))">
       <SourceType>Package</SourceType>
       <SourceId>MuseWave.App</SourceId>
@@ -1087,22 +1023,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - Blue Suede Shoes (1956)_0490b6f2-ee20-4869-b64e-444c101f993d.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - Blue Suede Shoes (1956)_8048657b-509e-40b3-9bf9-3a7ec081e796.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Elvis Presley - Blue Suede Shoes (1956)_8048657b-509e-40b3-9bf9-3a7ec081e796.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - Blue Suede Shoes (1956)_8048657b-509e-40b3-9bf9-3a7ec081e796.mp3))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - Burning Love (Official Audio)_d4539899-e5b3-40c8-a20c-aef94f22c94b.mp3))">
       <SourceType>Package</SourceType>
@@ -1136,54 +1056,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - I Love You Because (1956)_05f0d846-c42b-4867-8992-6338a14b33fa.mp3))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - I Love You Because (1956)_543d7d62-de3d-48d6-8d62-496f8b782c79.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Elvis Presley - I Love You Because (1956)_543d7d62-de3d-48d6-8d62-496f8b782c79.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - I Love You Because (1956)_543d7d62-de3d-48d6-8d62-496f8b782c79.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - I Love You Because (1956)_7e81ad42-ec32-44a8-bcc4-bb3328f7c8e7.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Elvis Presley - I Love You Because (1956)_7e81ad42-ec32-44a8-bcc4-bb3328f7c8e7.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis Presley - I Love You Because (1956)_7e81ad42-ec32-44a8-bcc4-bb3328f7c8e7.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis_Presley_LPM-1254_Album_Cover_83033b05-fe87-4496-bfcb-4cd87f4d3396.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Elvis_Presley_LPM-1254_Album_Cover_83033b05-fe87-4496-bfcb-4cd87f4d3396.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Elvis_Presley_LPM-1254_Album_Cover_83033b05-fe87-4496-bfcb-4cd87f4d3396.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3))">
       <SourceType>Package</SourceType>
       <SourceId>MuseWave.App</SourceId>
@@ -1200,38 +1072,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_b4877a41-bc4f-4647-b8d8-b0c8a809a93c.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Michael Jackson - Billie Jean (Official Video)_b4877a41-bc4f-4647-b8d8-b0c8a809a93c.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_b4877a41-bc4f-4647-b8d8-b0c8a809a93c.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_b75b08a9-2019-41b1-9161-f46c3c25f0dc.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Michael Jackson - Billie Jean (Official Video)_b75b08a9-2019-41b1-9161-f46c3c25f0dc.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Billie Jean (Official Video)_b75b08a9-2019-41b1-9161-f46c3c25f0dc.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3))">
       <SourceType>Package</SourceType>
       <SourceId>MuseWave.App</SourceId>
@@ -1247,22 +1087,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - The Girl Is Mine ft. Paul McCartney_68950789-e9ab-44e3-a4f0-cf23e6dcc867.mp3))">
-      <SourceType>Package</SourceType>
-      <SourceId>MuseWave.App</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MuseWave.App</BasePath>
-      <RelativePath>uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_68950789-e9ab-44e3-a4f0-cf23e6dcc867.mp3</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - The Girl Is Mine ft. Paul McCartney_68950789-e9ab-44e3-a4f0-cf23e6dcc867.mp3))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Michael Jackson - Thriller (Official Video - Shortened Version)_be6b4e57-2394-4823-be1e-106680b3a21e.mp3))">
       <SourceType>Package</SourceType>

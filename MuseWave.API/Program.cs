@@ -1,26 +1,22 @@
-﻿using System.Reflection;
-using IdentityServer4.AccessTokenValidation;
+﻿using IdentityServer4.AccessTokenValidation;
 using Infrastructure;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MuseWave.API.Services;
+using MuseWave.API.Utility;
 using MuseWave.Application;
 using MuseWave.Application.Contracts.Interfaces;
 using MuseWave.Application.Models;
 using MuseWave.Identity;
 using Microsoft.OpenApi.Models;
-using MuseWave.Application.Features.Albums.Commands.CreateAlbum;
-using MuseWave.Application.Features.Albums.Commands.DeleteAlbum;
-using MuseWave.Application.Features.Albums.Commands.UpdateAlbum;
-using MuseWave.Application.Features.Songs.Commands.CreateSong;
-using MuseWave.Application.Features.Songs.Commands.DeleteSong;
-using MuseWave.Application.Features.Songs.Commands.UpdateSong;
 using MuseWave.Identity.Models;
 using MuseWave.Identity.Services;
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
@@ -29,18 +25,13 @@ if (builder.Environment.IsDevelopment())
     builder.Configuration.AddUserSecrets<Program>();
 }
 
-builder.Services.AddTransient<IRequestHandler<CreateSongCommand, CreateSongCommandResponse>, CreateSongCommandHandler>();
-builder.Services.AddTransient<IRequestHandler<UpdateSongCommand, UpdateSongCommandResponse>, UpdateSongCommandHandler>();
-builder.Services.AddTransient<IRequestHandler<DeleteSongCommand, DeleteSongCommandResponse>, DeleteSongCommandHandler>();
-builder.Services.AddTransient<IRequestHandler<CreateAlbumCommand, CreateAlbumCommandResponse>, CreateAlbumCommandHandler>();
-builder.Services.AddTransient<IRequestHandler<UpdateAlbumCommand, UpdateAlbumCommandResponse>, UpdateAlbumCommandHandler>();
-builder.Services.AddTransient<IRequestHandler<DeleteAlbumCommand, DeleteAlbumCommandResponse>, DeleteAlbumCommandHandler>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddInfrastrutureToDI(
     builder.Configuration);
 builder.Services.AddInfrastrutureIdentityToDI(builder.Configuration);
@@ -87,6 +78,8 @@ builder.Services.AddSwaggerGen(c =>
         Title = "MuseWave API", 
 
     });
+
+    c.OperationFilter<FileResultContentTypeOperationFilter>();
 });
 
 

@@ -63,12 +63,14 @@ namespace MuseWave.App.Controllers
         [HttpGet("get-user-roles")]
         public async Task<IActionResult> GetUserRoles(string userName)
         {
+            // Find the user by their username
             var user = await _userManager.FindByNameAsync(userName);
             if (user == null)
             {
                 return NotFound($"User '{userName}' not found.");
             }
 
+            // Get the list of roles for the user
             var roles = await _userManager.GetRolesAsync(user);
 
             if (roles.Count == 0)
