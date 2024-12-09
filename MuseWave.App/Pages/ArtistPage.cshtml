@@ -8,7 +8,7 @@
 }
 
 <div class="container">
-    <h1>@Model.Artist.Name</h1>
+    <h1>@Model.Artist.UserName</h1>
 
     <h2>Albums</h2>
     @if (Model.Albums.Any())
@@ -20,23 +20,9 @@
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="/albums/@album.Title" class="btn btn-primary">@album.Title</a>
-                            @{
-                                var user = User.Identity.Name;
-                                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                                var isAdmin = User.IsInRole("Admin");
-                                var isArtist = userId == album.ArtistId.ToString();
-                            }
-            
-                            @if (isAdmin || isArtist)
-                            {
-                                <form method="post" asp-page-handler="DeleteAlbum" asp-route-id="@album.Id">
-                                    <button class="btn btn-danger" type="submit"><i class="bi bi-trash3-fill"></i>Delete</button>
-                                </form>
-                            }
                         </h5>
                     </div>
                 </div>
-                
             }
         </div>
     }
@@ -68,7 +54,7 @@
                     @if (isAdmin || isArtist)
                     {
                         <form method="post" asp-page-handler="DeleteSong" asp-route-id="@song.Id">
-                            <button class="btn btn-danger" type="submit"><i class="bi bi-trash3-fill"></i>Delete</button>
+                            <button type="submit">Delete</button>
                         </form>
                     }
                 </li>
