@@ -169,7 +169,7 @@ namespace MuseWave.App.Pages
                     };
                     var jsonObject = JsonNode.Parse(jsonResponse);
                     var songs = jsonObject["songs"].Deserialize<List<Song>>(options);
-                    return songs ?? new List<Song>();
+                    return songs?.Where(song => song.AlbumId == null).ToList() ?? new List<Song>();
                 }
             }
             catch (Exception ex)
