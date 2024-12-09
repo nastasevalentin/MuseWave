@@ -5,52 +5,12 @@
       "PackagePath": "staticwebassets/MuseWave.App.bundle.scp.css"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Screenshot from 2024-01-03 19-02-26_eb111599-f483-478e-825a-62bc9d4965d5.png",
-      "PackagePath": "staticwebassets/covers/Screenshot from 2024-01-03 19-02-26_eb111599-f483-478e-825a-62bc9d4965d5.png"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Screenshot from 2024-11-29 15-57-34_12f3fda5-7a8b-4260-b0c0-19adcee736cb.png",
-      "PackagePath": "staticwebassets/covers/Screenshot from 2024-11-29 15-57-34_12f3fda5-7a8b-4260-b0c0-19adcee736cb.png"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/cat_5af72c52-89f9-4ec5-a725-a52026383930.jpg",
-      "PackagePath": "staticwebassets/covers/cat_5af72c52-89f9-4ec5-a725-a52026383930.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg",
-      "PackagePath": "staticwebassets/covers/dog_0348c6e9-ce4d-4654-ba67-6b56f0f0ebca.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_0fd191a7-f322-4201-ac54-73bb1e26ec4a.jpg",
-      "PackagePath": "staticwebassets/covers/dog_0fd191a7-f322-4201-ac54-73bb1e26ec4a.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg",
-      "PackagePath": "staticwebassets/covers/dog_2703e4a6-0d5f-48e8-a117-f5a2b8f40295.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_3a5a4a49-6df5-45af-aa6a-33b8d4adaa8a.jpg",
-      "PackagePath": "staticwebassets/covers/dog_3a5a4a49-6df5-45af-aa6a-33b8d4adaa8a.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_6cc7eba7-c13c-41c1-8f3a-7ff3a95ca2bd.jpg",
-      "PackagePath": "staticwebassets/covers/dog_6cc7eba7-c13c-41c1-8f3a-7ff3a95ca2bd.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_e6a9783c-e508-4287-8402-d50661efa0c6.jpg",
-      "PackagePath": "staticwebassets/covers/dog_e6a9783c-e508-4287-8402-d50661efa0c6.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_f61c5312-55ad-4c2d-9c14-7a7cada79562.jpg",
-      "PackagePath": "staticwebassets/covers/dog_f61c5312-55ad-4c2d-9c14-7a7cada79562.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_fd5737df-1bb5-4a31-9e24-5dfadca32584.jpg",
-      "PackagePath": "staticwebassets/covers/dog_fd5737df-1bb5-4a31-9e24-5dfadca32584.jpg"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/test_61fdafb8-35eb-434b-837a-92712a071906.mp3",
-      "PackagePath": "staticwebassets/covers/test_61fdafb8-35eb-434b-837a-92712a071906.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/album1_6090cd5e-1ea1-4ccb-9156-e50a8f731a0e.jpg",
+      "PackagePath": "staticwebassets/covers/album1_6090cd5e-1ea1-4ccb-9156-e50a8f731a0e.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/css/site.css",
@@ -293,100 +253,28 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test.mp3",
-      "PackagePath": "staticwebassets/uploads/test.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Blue Suede Shoes (1956)_0490b6f2-ee20-4869-b64e-444c101f993d.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_0490b6f2-ee20-4869-b64e-444c101f993d.mp3"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_00b04617-50a7-407e-8c75-a65cdb21be42.mp3",
-      "PackagePath": "staticwebassets/uploads/test_00b04617-50a7-407e-8c75-a65cdb21be42.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_d4539899-e5b3-40c8-a20c-aef94f22c94b.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Burning Love (Official Audio)_d4539899-e5b3-40c8-a20c-aef94f22c94b.mp3"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_0541903e-62df-4cf6-9b0b-5c61abb19036.mp3",
-      "PackagePath": "staticwebassets/uploads/test_0541903e-62df-4cf6-9b0b-5c61abb19036.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - I Love You Because (1956)_05f0d846-c42b-4867-8992-6338a14b33fa.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - I Love You Because (1956)_05f0d846-c42b-4867-8992-6338a14b33fa.mp3"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_07f8ea84-674b-470f-8e2e-a9e699668386.mp3",
-      "PackagePath": "staticwebassets/uploads/test_07f8ea84-674b-470f-8e2e-a9e699668386.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_1400998e-162f-405a-bc00-7ad4db870a5a.mp3",
-      "PackagePath": "staticwebassets/uploads/test_1400998e-162f-405a-bc00-7ad4db870a5a.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3"
     },
     {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_17d2bdc3-3e51-4fa3-8022-cee56a636078.mp3",
-      "PackagePath": "staticwebassets/uploads/test_17d2bdc3-3e51-4fa3-8022-cee56a636078.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_22371a40-06d4-4139-9af3-36008b128db0.mp3",
-      "PackagePath": "staticwebassets/uploads/test_22371a40-06d4-4139-9af3-36008b128db0.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_24bc8011-f959-4226-a768-91fae677980f.mp3",
-      "PackagePath": "staticwebassets/uploads/test_24bc8011-f959-4226-a768-91fae677980f.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_39009298-ed8f-4d2d-824d-3f9849882189.mp3",
-      "PackagePath": "staticwebassets/uploads/test_39009298-ed8f-4d2d-824d-3f9849882189.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3",
-      "PackagePath": "staticwebassets/uploads/test_42a36997-6290-4e73-9016-e3ca56b50be1.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_4594d7f7-49db-4684-946c-97c7458e3761.mp3",
-      "PackagePath": "staticwebassets/uploads/test_4594d7f7-49db-4684-946c-97c7458e3761.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3",
-      "PackagePath": "staticwebassets/uploads/test_466538b3-8a98-4dee-b21b-00890ea15294.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_4bb4acf9-302b-4b44-aa15-122a4043e1de.mp3",
-      "PackagePath": "staticwebassets/uploads/test_4bb4acf9-302b-4b44-aa15-122a4043e1de.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_6ce5ce38-1f0f-4e3d-a2ff-478c2078bd20.mp3",
-      "PackagePath": "staticwebassets/uploads/test_6ce5ce38-1f0f-4e3d-a2ff-478c2078bd20.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_759fcb3d-8a24-4e38-8afc-6d12c2c09c99.mp3",
-      "PackagePath": "staticwebassets/uploads/test_759fcb3d-8a24-4e38-8afc-6d12c2c09c99.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_7ec4db37-0a4d-4637-bdf5-7dea57e57d96.mp3",
-      "PackagePath": "staticwebassets/uploads/test_7ec4db37-0a4d-4637-bdf5-7dea57e57d96.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_8104eaf1-680d-4b0b-8314-eeaf798b1af8.mp3",
-      "PackagePath": "staticwebassets/uploads/test_8104eaf1-680d-4b0b-8314-eeaf798b1af8.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_8262e026-3d22-49db-8f39-613877cfed7b.mp3",
-      "PackagePath": "staticwebassets/uploads/test_8262e026-3d22-49db-8f39-613877cfed7b.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_b34acafd-504a-427d-bd69-fdd74fb8adb7.mp3",
-      "PackagePath": "staticwebassets/uploads/test_b34acafd-504a-427d-bd69-fdd74fb8adb7.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_c6db47c4-f232-4b38-b43c-0506d653172e.mp3",
-      "PackagePath": "staticwebassets/uploads/test_c6db47c4-f232-4b38-b43c-0506d653172e.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_ec87f6ac-75d0-42ab-ab69-83555ffbfd12.mp3",
-      "PackagePath": "staticwebassets/uploads/test_ec87f6ac-75d0-42ab-ab69-83555ffbfd12.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_ed344508-2619-4096-8bcb-829bae3221ea.mp3",
-      "PackagePath": "staticwebassets/uploads/test_ed344508-2619-4096-8bcb-829bae3221ea.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3",
-      "PackagePath": "staticwebassets/uploads/test_f557803f-9894-4f44-82fe-5c297fbc0a6b.mp3"
-    },
-    {
-      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/test_f57de38e-cb2c-4f31-94cb-ba19a6cf8a05.mp3",
-      "PackagePath": "staticwebassets/uploads/test_f57de38e-cb2c-4f31-94cb-ba19a6cf8a05.mp3"
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_be6b4e57-2394-4823-be1e-106680b3a21e.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_be6b4e57-2394-4823-be1e-106680b3a21e.mp3"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MuseWave.App.Microsoft.AspNetCore.StaticWebAssets.props",
