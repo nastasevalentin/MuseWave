@@ -4,6 +4,10 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Security.Claims;
 using FluentAssertions;
+using Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using MW.API.IntegrationTests.Base;
 using MuseWave.Application.Features.Songs;
 using MuseWave.Application.Features.Songs.Commands.CreateSong;
@@ -14,12 +18,32 @@ namespace MW.API.IntegrationTests.Controllers;
 
 public class SongControllerTests: BaseApplicationContextTests
 {
+    private readonly ServiceProvider _serviceProvider;
+
+    public SongControllerTests()
+    {
+        var services = new ServiceCollection();
+        
+        services.RemoveAll<DbContextOptions>();
+        services.RemoveAll(typeof(DbContextOptions<>));
+        
+        services.AddDbContext<GlobalMWContext>(options =>
+        {
+            options.UseInMemoryDatabase("GlobalMWDbForTesting");
+        });
+
+        _serviceProvider = services.BuildServiceProvider();
+    }
+
+    private GlobalMWContext CreateDbContext()
+    {
+        return _serviceProvider.GetRequiredService<GlobalMWContext>();
+    }
     private const string RequestUri = "/api/v1/Songs";
 
     [Fact]
     public async Task When_GetAllSongsQueryHandlerIsCalled_Then_Success()
     {
-        // Arrange && Act
         string token = CreateToken();
         Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         var response = await Client.GetAsync(RequestUri);
@@ -34,14 +58,12 @@ public class SongControllerTests: BaseApplicationContextTests
         var responseString = await response.Content.ReadAsStringAsync();
         var result = JsonConvert.DeserializeObject<SongWrapper>(responseString);
     
-        // Assert
-        result?.Songs.Count.Should().Be(2);
+        result?.Songs.Count.Should().Be(6);
     }
     
     [Fact]
     public async Task When_PostSongCommandHandlerIsCalledWithRightParameters_Then_TheEntityCreatedShouldBeReturned()
     {
-        // Arrange
         string token = new JwtTokenBuilder()
             .WithRole("Artist")
             .Build();
@@ -55,10 +77,8 @@ public class SongControllerTests: BaseApplicationContextTests
             AudioFile = "string",
             ReleaseDate = DateTime.Parse("2022-01-01"),
         };
-        // Act
         var response = await Client.PostAsJsonAsync(RequestUri, song);
 
-        // Assert
         response.EnsureSuccessStatusCode();
         var responseString = await response.Content.ReadAsStringAsync();
         var result = JsonConvert.DeserializeObject<CreateSongCommandResponse>(responseString);
@@ -69,7 +89,6 @@ public class SongControllerTests: BaseApplicationContextTests
     [Fact]
     public async Task When_PostSongCommandHandlerIsCalledWithWrongParameters_Then_400ShouldBeReturned()
     {
-        // Arrange
         string token = new JwtTokenBuilder()
             .WithRole("Admin")
             .Build();
@@ -82,17 +101,14 @@ public class SongControllerTests: BaseApplicationContextTests
             Genre = "string",
             AudioFile = "string",
         };
-        // Act
         var response = await Client.PostAsJsonAsync(RequestUri, course);
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
     }
     
     [Fact]
     public async Task When_PostSongCommandHandlerIsCalledWithWrongParameters_Then_401ShouldBeReturned()
     {
-        // Arrange
         var course = new CreateSongCommand
         {
             Title = "Test Song",
@@ -102,17 +118,14 @@ public class SongControllerTests: BaseApplicationContextTests
             AudioFile = "string",
             ReleaseDate = DateTime.Parse("2022-01-01"),
         };
-        // Act
         var response = await Client.PostAsJsonAsync(RequestUri, course);
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
     }
 
     [Fact]
     public async Task When_GetSongByIdQueryHandlerIsCalledWithRightParameters_Then_Success()
     {
-        // Arrange
         string token = new JwtTokenBuilder()
             .WithRole("Admin")
             .Build();
@@ -138,33 +151,27 @@ public class SongControllerTests: BaseApplicationContextTests
             throw new InvalidOperationException("Failed to create song.");
         }
 
-        // Act
         var response = await Client.GetAsync($"{RequestUri}/{createResult.Song.Id}");
         response.EnsureSuccessStatusCode();
         var responseString = await response.Content.ReadAsStringAsync();
         var result = JsonConvert.DeserializeObject<SongDto>(responseString);
 
-        // Assert
         result?.Title.Should().Be(createResult.Song.Title);
     }
     
     [Fact]
     public async Task When_GetSongByIdQueryHandlerIsCalledWrongRightParameters_Then_404ShouldBeReturned()
     {
-        // Arrange
         string token = CreateToken();
         Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-        // Act
         var response = await Client.GetAsync($"{RequestUri}/{Guid.NewGuid()}");
         
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.NotFound);
     }
     
     [Fact]
     public async Task When_UpdateSongCommandHandlerIsCalledWithRightParameters_Then_Success()
     {
-        // Arrange
         string token = new JwtTokenBuilder()
             .WithRole("Admin")
             .Build();
@@ -199,21 +206,18 @@ public class SongControllerTests: BaseApplicationContextTests
             ReleaseDate = DateTime.Parse("2022-01-01"),
         };
     
-        // Act
         var response = await Client.PutAsJsonAsync($"{RequestUri}/{createResult.Song.Id}", updateSong);
 
         response.EnsureSuccessStatusCode();
         var responseString = await response.Content.ReadAsStringAsync();
         var result = JsonConvert.DeserializeObject<UpdateSongCommandResponse>(responseString);
     
-        // Assert
         result?.Song.Title.Should().Be(updateSong.Title);
     }
     
     [Fact]
     public async Task When_DeleteSongCommandHandlerIsCalledWithAdminRole_Then_Success()
     {
-        // Arrange
         string token = new JwtTokenBuilder()
             .WithRole("Admin")
             .Build();
@@ -233,19 +237,15 @@ public class SongControllerTests: BaseApplicationContextTests
         var createResponseString = await createResponse.Content.ReadAsStringAsync();
         var createResult = JsonConvert.DeserializeObject<CreateSongCommandResponse>(createResponseString);
 
-        // Act
         var response = await Client.DeleteAsync($"{RequestUri}/{createResult.Song.Id}");
 
-        // Assert
         response.EnsureSuccessStatusCode();
     }
     [Fact]
     public async Task When_DeleteSongCommandHandlerIsCalledWithoutArtistOrAdminRole_Then_401ShouldBeReturned()
     {
-        // Arrange && Act
         var response = await Client.DeleteAsync($"{RequestUri}/{Guid.NewGuid()}");
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
     }
 

@@ -14,30 +14,6 @@ namespace MW.API.IntegrationTests.Base
             return this;
         }
 
-        public JwtTokenBuilder WithUserName(string username)
-        {
-            Claims.Add(new Claim(ClaimTypes.Upn, username));
-            return this;
-        }
-
-        public JwtTokenBuilder WithEmail(string email)
-        {
-            Claims.Add(new Claim(ClaimTypes.Email, email));
-            return this;
-        }
-
-        public JwtTokenBuilder WithDepartment(string department)
-        {
-            Claims.Add(new Claim("department", department));
-            return this;
-        }
-
-        public JwtTokenBuilder WithExpiration(int expiresInMinutes)
-        {
-            ExpiresInMinutes = expiresInMinutes;
-            return this;
-        }
-
         public string Build()
         {
             var token = new JwtSecurityToken(

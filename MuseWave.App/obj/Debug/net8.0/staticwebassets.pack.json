@@ -9,8 +9,44 @@
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_1a240a92-34f1-43e0-a8ca-f9cb056a630d.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_1a240a92-34f1-43e0-a8ca-f9cb056a630d.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_6e237313-6d3a-45ca-8859-8dd98a7a6baa.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_6e237313-6d3a-45ca-8859-8dd98a7a6baa.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_9b2ae9f2-7021-4ff6-a4a4-f79323c49b3b.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_9b2ae9f2-7021-4ff6-a4a4-f79323c49b3b.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_a19137d4-53e2-4452-abfb-730683236085.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_a19137d4-53e2-4452-abfb-730683236085.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_cccab581-6e2d-4876-8dc7-55083f72de34.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_cccab581-6e2d-4876-8dc7-55083f72de34.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_e78559e5-68fb-4f53-8284-128da396c514.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_e78559e5-68fb-4f53-8284-128da396c514.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_f72c3fa9-fc15-4b03-a57c-04715e20c081.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_f72c3fa9-fc15-4b03-a57c-04715e20c081.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/album1_1543af52-920a-4bbc-8def-cac89bee0fe2.jpg",
+      "PackagePath": "staticwebassets/covers/album1_1543af52-920a-4bbc-8def-cac89bee0fe2.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/album1_6090cd5e-1ea1-4ccb-9156-e50a8f731a0e.jpg",
       "PackagePath": "staticwebassets/covers/album1_6090cd5e-1ea1-4ccb-9156-e50a8f731a0e.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/album1_c2a358a7-2c92-4dd2-9194-730542844071.jpg",
+      "PackagePath": "staticwebassets/covers/album1_c2a358a7-2c92-4dd2-9194-730542844071.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/css/site.css",
@@ -257,20 +293,72 @@
       "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_0490b6f2-ee20-4869-b64e-444c101f993d.mp3"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Blue Suede Shoes (1956)_1eb18e27-c4d5-4d0d-bada-68656890ea1e.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_1eb18e27-c4d5-4d0d-bada-68656890ea1e.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Blue Suede Shoes (1956)_aa7ec171-559b-4d86-8d12-d081afe1d143.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_aa7ec171-559b-4d86-8d12-d081afe1d143.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Blue Suede Shoes (1956)_f81df34f-9f35-468a-a653-5d2578a52749.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_f81df34f-9f35-468a-a653-5d2578a52749.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_c0071c01-2ddb-45f1-978f-3e2c6c71a9a9.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Burning Love (Official Audio)_c0071c01-2ddb-45f1-978f-3e2c6c71a9a9.mp3"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_d4539899-e5b3-40c8-a20c-aef94f22c94b.mp3",
       "PackagePath": "staticwebassets/uploads/Elvis Presley - Burning Love (Official Audio)_d4539899-e5b3-40c8-a20c-aef94f22c94b.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_fcd2214d-186d-474e-8541-9bf4b2aaaa43.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Burning Love (Official Audio)_fcd2214d-186d-474e-8541-9bf4b2aaaa43.mp3"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - I Love You Because (1956)_05f0d846-c42b-4867-8992-6338a14b33fa.mp3",
       "PackagePath": "staticwebassets/uploads/Elvis Presley - I Love You Because (1956)_05f0d846-c42b-4867-8992-6338a14b33fa.mp3"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - I Love You Because (1956)_3b834e20-c2f7-4c3b-a03b-0d06d26280ff.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - I Love You Because (1956)_3b834e20-c2f7-4c3b-a03b-0d06d26280ff.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - I Love You Because (1956)_8fa1a5d1-705e-4934-888e-83445ff851f5.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - I Love You Because (1956)_8fa1a5d1-705e-4934-888e-83445ff851f5.mp3"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3",
       "PackagePath": "staticwebassets/uploads/Michael Jackson - Billie Jean (Official Video)_2f3beced-148c-43c0-a827-ebb323ca7d4a.mp3"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Billie Jean (Official Video)_6d8f53a2-ec69-4183-b651-417ee47e298a.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Billie Jean (Official Video)_6d8f53a2-ec69-4183-b651-417ee47e298a.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Billie Jean (Official Video)_8fd7b9d9-b588-4a7a-9a3f-c9a476a83950.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Billie Jean (Official Video)_8fd7b9d9-b588-4a7a-9a3f-c9a476a83950.mp3"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3",
       "PackagePath": "staticwebassets/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_486ef5a7-e36d-40cf-bde7-24b079a4f41a.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_78e84970-af1b-4607-ae35-8cf014e1aca8.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_78e84970-af1b-4607-ae35-8cf014e1aca8.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_7a8c6e57-5c8f-4a93-9de3-441349511a6d.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - The Girl Is Mine ft. Paul McCartney_7a8c6e57-5c8f-4a93-9de3-441349511a6d.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_44f01b40-2adb-4f6f-8e67-a1453b9a93ea.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_44f01b40-2adb-4f6f-8e67-a1453b9a93ea.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_b02e6759-d9f8-4c1d-ab60-53d4e7827c94.mp3",
+      "PackagePath": "staticwebassets/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_b02e6759-d9f8-4c1d-ab60-53d4e7827c94.mp3"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Michael Jackson - Thriller (Official Video - Shortened Version)_be6b4e57-2394-4823-be1e-106680b3a21e.mp3",

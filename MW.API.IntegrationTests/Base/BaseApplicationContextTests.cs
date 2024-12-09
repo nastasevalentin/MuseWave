@@ -8,7 +8,7 @@ using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace MW.API.IntegrationTests.Base;
 
-public class BaseApplicationContextTests: IAsyncDisposable
+public class BaseApplicationContextTests : IAsyncDisposable
 {
     protected readonly WebApplicationFactory<Program> Application;
     protected readonly HttpClient Client;
@@ -20,13 +20,19 @@ public class BaseApplicationContextTests: IAsyncDisposable
         {
             builder.ConfigureServices(services =>
             {
-                
-                services.RemoveAll<DbContextOptions>();
-                services.RemoveAll(typeof(DbContextOptions<>));
-                services.AddDbContext<GlobalMWContext>(options =>
-                {
-                    options.UseInMemoryDatabase("GlobalMWDbForTesting");
-                });
+                // var dbContextService = services.FirstOrDefault(service => service.ServiceType == typeof(DbContextOptions<GlobalMWContext>));
+                // Console.WriteLine($"DbContextOptions<GlobalMWContext> service before removal: {dbContextService}");
+                //
+                // services.RemoveAll<DbContextOptions>();
+                // services.RemoveAll(typeof(DbContextOptions<>));
+                // Console.WriteLine("DbContextOptions removed");
+                // dbContextService = services.FirstOrDefault(service => service.ServiceType == typeof(DbContextOptions<GlobalMWContext>));
+                // Console.WriteLine($"DbContextOptions<GlobalMWContext> service after removal: {dbContextService}");
+                //
+                // services.AddDbContext<GlobalMWContext>(options =>
+                // {
+                //     options.UseInMemoryDatabase("GlobalMWDbForTesting");
+                // });
 
                 services.Configure<JwtBearerOptions>(
                     JwtBearerDefaults.AuthenticationScheme,
@@ -41,23 +47,28 @@ public class BaseApplicationContextTests: IAsyncDisposable
                         options.Configuration.SigningKeys.Add(JwtTokenProvider.SecurityKey);
                     }
                 );
+
                 var sp = services.BuildServiceProvider();
-                using (var scope = sp.CreateScope()) 
+                using (var scope = sp.CreateScope())
                 {
                     var scopedServices = scope.ServiceProvider;
                     var db = scopedServices.GetRequiredService<GlobalMWContext>();
-
-                    db.Database.EnsureDeleted();
-                    db.Database.EnsureCreated();
-
-                    Seed.InitializeDbForTests(db);
+                    var dbContext = scope.ServiceProvider.GetRequiredService<GlobalMWContext>();
+                    var dbProvider = dbContext.Database.ProviderName;
+                    Console.WriteLine($"Database Provider: {dbProvider}");
+                    if (db.Database.IsInMemory())
+                    {
+                        db.Database.EnsureDeleted();
+                        db.Database.EnsureCreated();
+                        Seed.InitializeDbForTests(db);
+                    }
                 }
             });
         });
         
         Client = Application.CreateClient();
     }
-    
+
     public async ValueTask DisposeAsync()
     {
         GC.SuppressFinalize(this);

@@ -1,5 +1,6 @@
 ﻿using IdentityServer4.AccessTokenValidation;
 using Infrastructure;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +13,12 @@ using MuseWave.Application.Contracts.Interfaces;
 using MuseWave.Application.Models;
 using MuseWave.Identity;
 using Microsoft.OpenApi.Models;
+using MuseWave.Application.Features.Albums.Commands.CreateAlbum;
+using MuseWave.Application.Features.Albums.Commands.DeleteAlbum;
+using MuseWave.Application.Features.Albums.Commands.UpdateAlbum;
+using MuseWave.Application.Features.Songs.Commands.CreateSong;
+using MuseWave.Application.Features.Songs.Commands.DeleteSong;
+using MuseWave.Application.Features.Songs.Commands.UpdateSong;
 using MuseWave.Identity.Models;
 using MuseWave.Identity.Services;
 
@@ -39,6 +46,14 @@ builder.Services.AddApplicationServices();
 builder.Services.AddControllers();
 builder.Services.AddScoped<RoleService>();
 builder.Services.AddEndpointsApiExplorer();
+
+
+builder.Services.AddTransient<IRequestHandler<CreateSongCommand, CreateSongCommandResponse>, CreateSongCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<UpdateSongCommand, UpdateSongCommandResponse>, UpdateSongCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<DeleteSongCommand, DeleteSongCommandResponse>, DeleteSongCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<CreateAlbumCommand, CreateAlbumCommandResponse>, CreateAlbumCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<UpdateAlbumCommand, UpdateAlbumCommandResponse>, UpdateAlbumCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<DeleteAlbumCommand, DeleteAlbumCommandResponse>, DeleteAlbumCommandHandler>();
 
 builder.Services.AddSwaggerGen(c =>
 {
