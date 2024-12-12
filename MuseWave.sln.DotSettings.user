@@ -7,4 +7,6 @@
     &lt;Project Location="/home/valentin/RiderProjects/MuseWave/MW.API.IntegrationTests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;MW.API.IntegrationTests&amp;gt;" /&gt;
     &lt;Project Location="/home/valentin/RiderProjects/MuseWave/MW.Domain.Core.Tests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;MW.Domain.Core.Tests&amp;gt;" /&gt;
   &lt;/Or&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=082ca3ea_002D35b7_002D4cb5_002D849a_002D20a28f20bdeb_0023MW_002EDomain_002ECore_002ETests/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=458a961c_002D6623_002D4847_002Da6fe_002D06038d2ef0b2_0023MW_002EAPI_002EIntegrationTests/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

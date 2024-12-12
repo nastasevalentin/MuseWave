@@ -24,7 +24,7 @@
             <h2>Discover Albums</h2>
             @foreach (var album in Model.RandomAlbums)
             {
-                <a href="/albums/@album.Title" class="card">
+                <a href="/albums/@album.Id" class="card">
                     <img class="card-img-top" src="@album.CoverImage">
                     <div class="card-body">
                         <h5 class="card-title">@album.Title</h5>
@@ -55,7 +55,7 @@
             <h2>Discover Artists</h2>
             @foreach (var user in Model.RandomUsers)
             {
-                <a href="/artists/@user.UserName" class="card">
+                <a href="/artists/@user.Id" class="card">
                     <div class="card-body">
                         <h5 class="card-title">@user.UserName</h5>
                     </div>

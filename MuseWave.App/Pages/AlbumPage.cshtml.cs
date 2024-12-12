@@ -18,25 +18,21 @@ public class AlbumPage : PageModel
     }
 
     [BindProperty(SupportsGet = true)]
-    public string Title { get; set; }
+    public Guid Id { get; set; }
+    
 
     public Album Album { get; private set; }
 
     public async Task OnGetAsync()
     {
-        var albums = await _albumRepository.GetAll();
-        var album = albums.Value.FirstOrDefault(a => a.Title.Equals(Title, StringComparison.OrdinalIgnoreCase));
-        if (album != null)
+        var result = await _albumRepository.GetByIdAsync(Id);
+        if (result.IsSuccess)
         {
-            var result = await _albumRepository.GetByIdAsync(album.Id);
-            if (result.IsSuccess)
+            Album = result.Value;
+            var songsResult = await _songRepository.GetAllSongsByAlbumId(Id);
+            if (songsResult.IsSuccess)
             {
-                Album = result.Value;
-                var songsResult = await _songRepository.GetAllSongsByAlbumId(album.Id);
-                if (songsResult.IsSuccess)
-                {
-                    Songs = songsResult.Value;
-                }
+                Songs = songsResult.Value;
             }
         }
     }

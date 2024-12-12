@@ -19,6 +19,7 @@ using MuseWave.Application.Features.Albums.Commands.UpdateAlbum;
 using MuseWave.Application.Features.Songs.Commands.CreateSong;
 using MuseWave.Application.Features.Songs.Commands.DeleteSong;
 using MuseWave.Application.Features.Songs.Commands.UpdateSong;
+using MuseWave.Application.Services;
 using MuseWave.Identity.Models;
 using MuseWave.Identity.Services;
 
@@ -47,6 +48,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<RoleService>();
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddScoped<AlbumService>();
+builder.Services.AddScoped<SongService>();
 
 builder.Services.AddTransient<IRequestHandler<CreateSongCommand, CreateSongCommandResponse>, CreateSongCommandHandler>();
 builder.Services.AddTransient<IRequestHandler<UpdateSongCommand, UpdateSongCommandResponse>, UpdateSongCommandHandler>();

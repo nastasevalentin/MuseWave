@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MuseWave.App.bundle.scp.css"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_133ecd9a-dee7-4856-9a22-b586ea91a52e.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_133ecd9a-dee7-4856-9a22-b586ea91a52e.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg",
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_16650c1e-2591-419e-9e8c-5eebba4d2160.jpg"
     },
@@ -13,8 +17,20 @@
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_1a240a92-34f1-43e0-a8ca-f9cb056a630d.jpg"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_5654fc00-3372-43c3-ac05-1548b2e0e2fa.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_5654fc00-3372-43c3-ac05-1548b2e0e2fa.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_60cd6a83-76da-4c3b-82a3-f83459d13de6.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_60cd6a83-76da-4c3b-82a3-f83459d13de6.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_6e237313-6d3a-45ca-8859-8dd98a7a6baa.jpg",
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_6e237313-6d3a-45ca-8859-8dd98a7a6baa.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_6ff09533-cb40-49ee-a5c1-1f50dec5dc7a.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_6ff09533-cb40-49ee-a5c1-1f50dec5dc7a.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_9b2ae9f2-7021-4ff6-a4a4-f79323c49b3b.jpg",
@@ -25,12 +41,44 @@
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_a19137d4-53e2-4452-abfb-730683236085.jpg"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_a1b8eb16-c87b-4049-bdd0-613e4b90aec8.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_a1b8eb16-c87b-4049-bdd0-613e4b90aec8.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_bc3e4166-2967-45f8-b7fc-4732cb5551a5.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_bc3e4166-2967-45f8-b7fc-4732cb5551a5.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_c8f427e1-3623-44ab-bad3-6b85a9e2f3af.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_c8f427e1-3623-44ab-bad3-6b85a9e2f3af.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_c8f9fc1a-4f73-4653-8e49-d186de00fe9c.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_c8f9fc1a-4f73-4653-8e49-d186de00fe9c.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_cccab581-6e2d-4876-8dc7-55083f72de34.jpg",
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_cccab581-6e2d-4876-8dc7-55083f72de34.jpg"
     },
     {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_d3ecf79e-c048-41ec-a63f-e3ecf78b10c6.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_d3ecf79e-c048-41ec-a63f-e3ecf78b10c6.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_e4555eb4-48f5-438f-9cd2-ef1fafd59d9d.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_e4555eb4-48f5-438f-9cd2-ef1fafd59d9d.jpg"
+    },
+    {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_e78559e5-68fb-4f53-8284-128da396c514.jpg",
       "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_e78559e5-68fb-4f53-8284-128da396c514.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_e84f1d7f-a469-43d3-939b-16be3882ce87.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_e84f1d7f-a469-43d3-939b-16be3882ce87.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_ef68cb98-4b0e-4daf-b35e-c6178f08a0e6.jpg",
+      "PackagePath": "staticwebassets/covers/Elvis_Presley_LPM-1254_Album_Cover_ef68cb98-4b0e-4daf-b35e-c6178f08a0e6.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/Elvis_Presley_LPM-1254_Album_Cover_f72c3fa9-fc15-4b03-a57c-04715e20c081.jpg",
@@ -47,6 +95,10 @@
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/album1_c2a358a7-2c92-4dd2-9194-730542844071.jpg",
       "PackagePath": "staticwebassets/covers/album1_c2a358a7-2c92-4dd2-9194-730542844071.jpg"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/covers/dog_97d92eba-4c6f-4875-8566-a14b9743899d.jpg",
+      "PackagePath": "staticwebassets/covers/dog_97d92eba-4c6f-4875-8566-a14b9743899d.jpg"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/css/site.css",
@@ -303,6 +355,10 @@
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Blue Suede Shoes (1956)_f81df34f-9f35-468a-a653-5d2578a52749.mp3",
       "PackagePath": "staticwebassets/uploads/Elvis Presley - Blue Suede Shoes (1956)_f81df34f-9f35-468a-a653-5d2578a52749.mp3"
+    },
+    {
+      "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_1f91e96b-10d3-4b0f-be05-890d20a9d83f.mp3",
+      "PackagePath": "staticwebassets/uploads/Elvis Presley - Burning Love (Official Audio)_1f91e96b-10d3-4b0f-be05-890d20a9d83f.mp3"
     },
     {
       "Id": "/home/valentin/RiderProjects/MuseWave/MuseWave.App/wwwroot/uploads/Elvis Presley - Burning Love (Official Audio)_c0071c01-2ddb-45f1-978f-3e2c6c71a9a9.mp3",

@@ -27,9 +27,9 @@ namespace MuseWave.App.Pages
             this.dbContext = dbContext;
         }
 
-        public async Task<IActionResult> OnGetAsync(string username)
+        public async Task<IActionResult> OnGetAsync(Guid id)
         {
-            Artist = await userManager.Users.FirstOrDefaultAsync(u => u.UserName == username);
+            Artist = await userManager.Users.FirstOrDefaultAsync(u => u.Id == id.ToString());
             if (Artist == null)
             {
                 return NotFound();

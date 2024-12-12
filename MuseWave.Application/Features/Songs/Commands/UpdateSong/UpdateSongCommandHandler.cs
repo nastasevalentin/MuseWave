@@ -1,16 +1,18 @@
 using MuseWave.Domain.Entities;
 using MediatR;
 using MuseWave.Application.Persistence;
+using MuseWave.Application.Services;
 
 namespace MuseWave.Application.Features.Songs.Commands.UpdateSong;
 
 public class UpdateSongCommandHandler: IRequestHandler<UpdateSongCommand, UpdateSongCommandResponse>
 {
     private readonly ISongRepository repository;
-
-    public UpdateSongCommandHandler(ISongRepository repository)
+    private readonly SongService songService;
+    public UpdateSongCommandHandler(ISongRepository repository, SongService songService)
     {
         this.repository = repository;
+        this.songService = songService;
     }
 
     public async Task<UpdateSongCommandResponse> Handle(UpdateSongCommand request, CancellationToken cancellationToken)
@@ -25,7 +27,7 @@ public class UpdateSongCommandHandler: IRequestHandler<UpdateSongCommand, Update
             };
         }
         
-        var updatedSong = Song.Update(song.Value, request.Title, request.ArtistId, request.AlbumId, request.Genre, request.AudioFile, request.ReleaseDate);
+        var updatedSong = songService.UpdateSong(song.Value, request.Title, request.ArtistId, request.AlbumId, request.Genre, request.AudioFile, request.ReleaseDate);
         if (!song.IsSuccess)
         {
             return new UpdateSongCommandResponse

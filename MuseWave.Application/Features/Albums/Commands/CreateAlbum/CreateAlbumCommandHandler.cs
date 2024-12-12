@@ -1,5 +1,6 @@
 using MediatR;
 using MuseWave.Application.Persistence;
+using MuseWave.Application.Services;
 using MuseWave.Domain.Entities;
 
 namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
@@ -7,10 +8,12 @@ namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
     public class CreateAlbumCommandHandler : IRequestHandler<CreateAlbumCommand, CreateAlbumCommandResponse>
     {
         private readonly IAlbumRepository repository;
-        
-        public CreateAlbumCommandHandler(IAlbumRepository repository)
+        private readonly AlbumService albumService;
+
+        public CreateAlbumCommandHandler(IAlbumRepository repository, AlbumService albumService)
         {
             this.repository = repository;
+            this.albumService = albumService;
         }
         
         public async Task<CreateAlbumCommandResponse> Handle(CreateAlbumCommand request, CancellationToken cancellationToken)
@@ -27,29 +30,29 @@ namespace MuseWave.Application.Features.Albums.Commands.CreateAlbum
                 };
             }
             
-            var album = Album.Create(request.Title, request.ArtistId, request.Genre, request.ReleaseDate, request.CoverImage);            
-            if(!album.IsSuccess)
+            var albumResult = albumService.CreateAlbum(request.Title, request.ArtistId, request.Genre, request.ReleaseDate, request.CoverImage);
+            if (!albumResult.IsSuccess)
             {
                 return new CreateAlbumCommandResponse
                 {
                     Success = false,
-                    ValidationsErrors = new List<string> { album.Error }
+                    ValidationsErrors = new List<string> { albumResult.Error }
                 };
             }
 
-            await repository.AddAsync(album.Value);
+            await repository.AddAsync(albumResult.Value);
 
             return new CreateAlbumCommandResponse
             {
                 Success = true,
                 Album = new AlbumDto
                 {
-                    Id = album.Value.Id,
-                    Title = album.Value.Title,
-                    ArtistId = album.Value.ArtistId,
-                    Genre = album.Value.Genre,
-                    ReleaseDate = album.Value.ReleaseDate,
-                    CoverImage = album.Value.CoverImage
+                    Id = albumResult.Value.Id,
+                    Title = albumResult.Value.Title,
+                    ArtistId = albumResult.Value.ArtistId,
+                    Genre = albumResult.Value.Genre,
+                    ReleaseDate = albumResult.Value.ReleaseDate,
+                    CoverImage = albumResult.Value.CoverImage
                 }
             };
         }

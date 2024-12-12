@@ -1,5 +1,6 @@
 using MediatR;
 using MuseWave.Application.Persistence;
+using MuseWave.Application.Services;
 using MuseWave.Domain.Entities;
 
 namespace MuseWave.Application.Features.Songs.Commands.CreateSong
@@ -7,10 +8,11 @@ namespace MuseWave.Application.Features.Songs.Commands.CreateSong
     public class CreateSongCommandHandler : IRequestHandler<CreateSongCommand, CreateSongCommandResponse>
     {
         private readonly ISongRepository repository;
-        
-        public CreateSongCommandHandler(ISongRepository repository)
+        private readonly SongService songService;
+        public CreateSongCommandHandler(ISongRepository repository, SongService songService)
         {
             this.repository = repository;
+            this.songService = songService;
         }
         
         public async Task<CreateSongCommandResponse> Handle(CreateSongCommand request, CancellationToken cancellationToken)
@@ -27,7 +29,7 @@ namespace MuseWave.Application.Features.Songs.Commands.CreateSong
                 };
             }
             
-            var song = Song.Create(request.Title, request.ArtistId, request.AlbumId, request.Genre, request.AudioFile, request.ReleaseDate);            if(!song.IsSuccess)
+            var song = songService.CreateSong(request.Title, request.ArtistId, request.AlbumId, request.Genre, request.AudioFile, request.ReleaseDate);            if(!song.IsSuccess)
             {
                 return new CreateSongCommandResponse
                 {

@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Identity;
 using MuseWave.Identity;
 using MuseWave.Identity.Models;
 
+using System.ComponentModel.DataAnnotations;
+using MuseWave.Application.Persistence;
+
 namespace MuseWave.App.Pages
 {
     public class CreateSongModel : PageModel
@@ -30,7 +33,7 @@ namespace MuseWave.App.Pages
 
         public void OnGet()
         {
-            // You can use AlbumId here if needed
+            
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -38,7 +41,11 @@ namespace MuseWave.App.Pages
             Console.WriteLine("CreateSong POST request received.");
             Console.WriteLine($"Audio file received: {AudioFile?.FileName} | legnth: {AudioFile?.Length}");
             
-            
+            if (_context.Songs.Any(s => s.Title == Song.Title))
+            {
+                ModelState.AddModelError("Song.Title", "A song with this title already exists.");
+                return Page();
+            }
             
             if (!ModelState.IsValid)
             {
@@ -73,7 +80,6 @@ namespace MuseWave.App.Pages
                         Directory.CreateDirectory(uploadsFolder);
                     }
 
-                    // Generate a unique filename to avoid overwriting
                     var fileName = Path.GetFileNameWithoutExtension(AudioFile.FileName);
                     var extension = Path.GetExtension(AudioFile.FileName);
                     var uniqueFileName = $"{fileName}_{Guid.NewGuid()}{extension}";
@@ -84,13 +90,11 @@ namespace MuseWave.App.Pages
                         await AudioFile.CopyToAsync(stream);
                     }
 
-                    // Store the relative file path in the Song entity
-                    Song.AudioFile = Path.Combine("uploads", uniqueFileName);  // relative path to store in the DB
+                    Song.AudioFile = Path.Combine("uploads", uniqueFileName);
                     Console.WriteLine($"File saved to: {filePath}");
                 }
                 catch (Exception ex)
                 {
-                    // Log the exception
                     Console.WriteLine($"Error uploading file: {ex.Message}");
                     ModelState.AddModelError(string.Empty, "An error occurred while uploading the file.");
                     return Page();
@@ -107,7 +111,7 @@ namespace MuseWave.App.Pages
 
                 if (AlbumId != Guid.Empty)
                 {
-                    Song.AlbumId = AlbumId; // Set the AlbumId from the query string if it exists
+                    Song.AlbumId = AlbumId;
                 }
             }
             else
@@ -117,18 +121,27 @@ namespace MuseWave.App.Pages
                 return Page();
             }
 
-            // Print the request data
-            Console.WriteLine($"Song Title: {Song.Title}");
-            Console.WriteLine($"Song ArtistId: {Song.ArtistId}");
-            Console.WriteLine($"Song AlbumId: {Song.AlbumId}");
-            Console.WriteLine($"Song Genre: {Song.Genre}");
-            Console.WriteLine($"Song Audio: {Song.AudioFile}");
 
-            // Add logic to save the song
             _context.Songs.Add(Song);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("/User");
+        }
+    }
+    
+    public class UniqueSongTitleAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            var dbContext = validationContext.GetService<GlobalMWContext>();
+            var title = value as string;
+
+            if (dbContext.Songs.Any(s => s.Title == title))
+            {
+                return new ValidationResult("A song with this title already exists.");
+            }
+
+            return ValidationResult.Success;
         }
     }
 }

@@ -13,13 +13,13 @@ namespace Infrastructure.Repositories
         {
         }
         
-        public virtual async Task<Result<IReadOnlyList<Album>>> GetAllAlbumsByArtistId(Guid artistId)
+        public async Task<Result<IReadOnlyList<Album>>> GetAllAlbumsByArtistId(Guid artistId)
         {
             var albums = await context.Albums.Where(a => a.ArtistId == artistId).ToListAsync();
             return Result<IReadOnlyList<Album>>.Success(albums);
         }
         
-        public virtual async Task<Result<IReadOnlyList<Album>>> GetAllAlbums()
+        public async Task<Result<IReadOnlyList<Album>>> GetAllAlbums()
         {
             var albums = await context.Albums.ToListAsync();
             return Result<IReadOnlyList<Album>>.Success(albums);

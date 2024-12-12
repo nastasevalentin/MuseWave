@@ -28,11 +28,9 @@ namespace MuseWave.Identity
                        typeof(ApplicationDbContext)
                        .Assembly.FullName)));
 
-            // For Identity  
             services.AddIdentity<ApplicationUser, IdentityRole>()
                             .AddEntityFrameworkStores<ApplicationDbContext>()
                             .AddDefaultTokenProviders();
-            // Adding Authentication  
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -40,7 +38,6 @@ namespace MuseWave.Identity
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             })
 
-                        // Adding Jwt Bearer  
                         .AddJwtBearer(options =>
                         {
                             options.SaveToken = true;

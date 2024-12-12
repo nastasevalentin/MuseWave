@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="/albums/@album.Title" class="btn btn-primary">@album.Title</a>
+                                <a href="/albums/@album.Id" class="btn btn-primary">@album.Title</a>
                             </h5>
                             <form method="post" asp-page-handler="DeleteAlbum" asp-route-id="@album.Id">
                                 <button class="btn btn-danger" type="submit"><i class="bi bi-trash3-fill"></i>Delete</button>

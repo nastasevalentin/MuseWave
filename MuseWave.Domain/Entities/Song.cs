@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using MuseWave.Domain.Common;
 
 namespace MuseWave.Domain.Entities;
@@ -12,7 +13,7 @@ public class Song
     public string AudioFile { get; set; }
     public DateTime ReleaseDate { get; set; }
     
-    private Song(string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
+    public Song(string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
     {
         Id = new Guid();
         Title = title;
@@ -23,84 +24,17 @@ public class Song
         ReleaseDate = releaseDate;
     }
     
+    public void Update(string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
+    {
+        Title = title;
+        ArtistId = artistId;
+        AlbumId = albumId;
+        Genre = genre;
+        AudioFile = audioFile;
+        ReleaseDate = releaseDate;
+    }
+    
     public Song()
     {
-    }
-    
-    public static Result<Song> Create(string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
-    {
-        if (string.IsNullOrWhiteSpace(title))
-        {
-            return Result<Song>.Failure("title should not be empty");
-        }
-        
-        if (artistId == default)
-        {
-            return Result<Song>.Failure("artist id should not be default");
-        }
-        
-        if (string.IsNullOrWhiteSpace(genre))
-        {
-            return Result<Song>.Failure("genre should not be empty");
-        }
-        
-        if (string.IsNullOrWhiteSpace(audioFile))
-        {
-            return Result<Song>.Failure("audio file should not be empty");
-        }
-        
-        if (releaseDate == default)
-        {
-            return Result<Song>.Failure("release date should not be default");
-        }
-        
-        return Result<Song>.Success(new Song(title, artistId, albumId, genre, audioFile, releaseDate));
-    }
-    
-    public static Result<Song> Update(Song song, string title, Guid artistId, Guid? albumId, string genre, string audioFile, DateTime releaseDate)
-    {
-        if (string.IsNullOrWhiteSpace(title))
-        {
-            return Result<Song>.Failure("title should not be empty");
-        }
-        
-        if (artistId == default)
-        {
-            return Result<Song>.Failure("artist id should not be default");
-        }
-        
-        if (string.IsNullOrWhiteSpace(genre))
-        {
-            return Result<Song>.Failure("genre should not be empty");
-        }
-        
-        if (string.IsNullOrWhiteSpace(audioFile))
-        {
-            return Result<Song>.Failure("audio file should not be empty");
-        }
-        
-        if (releaseDate == default)
-        {
-            return Result<Song>.Failure("release date should not be default");
-        }
-        
-        song.Title = title;
-        song.ArtistId = artistId;
-        song.AlbumId = albumId;
-        song.Genre = genre;
-        song.AudioFile = audioFile;
-        song.ReleaseDate = releaseDate;
-        
-        return Result<Song>.Success(song);
-    }
-    
-    public void AttachArtist(Guid artistId)
-    {
-        ArtistId = artistId;
-    }
-    
-    public void AttachAlbum(Guid albumId)
-    {
-        AlbumId = albumId;
     }
 }

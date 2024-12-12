@@ -33,7 +33,11 @@ namespace MuseWave.App.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             Console.WriteLine("CreateAlbum POST request received.");
-
+            // if (_context.Albums.Any(a => a.Title == Album.Title))
+            // {
+            //     ModelState.AddModelError("Album.Title", "A song with this title already exists.");
+            //     return Page();
+            // }
             if (!ModelState.IsValid)
             {
                 Console.WriteLine("Model state is invalid.");
@@ -77,7 +81,6 @@ namespace MuseWave.App.Pages
                         Directory.CreateDirectory(uploadsFolder);
                     }
 
-                    // Generate a unique filename to avoid overwriting
                     var fileName = Path.GetFileNameWithoutExtension(CoverImage.FileName);
                     var extension = Path.GetExtension(CoverImage.FileName);
                     var uniqueFileName = $"{fileName}_{Guid.NewGuid()}{extension}";
@@ -88,13 +91,11 @@ namespace MuseWave.App.Pages
                         await CoverImage.CopyToAsync(stream);
                     }
 
-                    // Store the relative file path in the Song entity
                     Album.CoverImage = Path.Combine("covers", uniqueFileName);  // relative path to store in the DB
                     Console.WriteLine($"File saved to: {filePath}");
                 }
                 catch (Exception ex)
                 {
-                    // Log the exception
                     Console.WriteLine($"Error uploading file: {ex.Message}");
                     ModelState.AddModelError(string.Empty, "An error occurred while uploading the file.");
                     return Page();
